@@ -16,7 +16,7 @@ defined in the Aqua Book][aqua-book].
 
 govcookiecutter-lite was developed from the original [govcookiecutter][govcookiecutter] but has
 minimised the project creation to include only the minimum files and structure to quickly setup
-python packages. 
+python packages.
 
 [For reasons why we developed `govcookiecutter`, read the blog post][blog-post], and
 [watch the live demonstration from March 2021 on version 0.5.3][youtube].
