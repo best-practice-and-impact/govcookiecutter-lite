@@ -5,7 +5,6 @@ import pytest
 from sphinx.cmd.build import main
 
 
-
 @pytest.mark.skip(
     reason="Unclear how to test this, unless there is a title in each " "framework"
 )
