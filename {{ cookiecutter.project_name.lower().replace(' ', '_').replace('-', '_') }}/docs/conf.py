@@ -1,4 +1,4 @@
-# {{ cookiecutter.project_name }} documentation build configuration file
+# {{ cookiecutter.repo_name }} documentation build configuration file
 #
 # This file is execfile()d with the current
 # directory set to its containing dir.
@@ -48,7 +48,7 @@ source_suffix = {
 master_doc = "index"
 
 # General information about the project.
-project = "{{ cookiecutter.project_name }}"
+project = "{{ cookiecutter.repo_name }}"
 author = "{{ cookiecutter.organisation_handle }}"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -165,7 +165,7 @@ html_static_path = ["_static"]
 # html_search_scorer = "scorer.js"
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}doc"
+htmlhelp_basename = "{{ cookiecutter.repo_name.lower().replace(' ', '_').replace('-', '_') }}doc"
 
 # -- Options for autosection output ----------------
 
