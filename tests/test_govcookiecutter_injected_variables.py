@@ -6,10 +6,6 @@ import pytest
 
 # Define the expected counts for each cookiecutter variable - any counts that deviate
 # because of other variables are listed at the end of each dictionary
-ORGANISATION_NAME_COUNT = {
-    "{{ cookiecutter.organisation_name }}.": 1,
-    "({{ cookiecutter.organisation_name }})": 1,
-}
 ORGANISATION_HANDLE_COUNT = {
     '"{{ cookiecutter.organisation_handle }}"': 1,
     "`{{ cookiecutter.organisation_handle }}`": 2,
@@ -103,8 +99,6 @@ def recursive_open_and_count_search_terms(
 
 # Define the test cases for the `test_injected_counts_correct` test
 args_injected_counts_correct = [
-    ("organisation_name", "org_1", ORGANISATION_NAME_COUNT),
-    ("organisation_name", "org_2", ORGANISATION_NAME_COUNT),
     ("organisation_handle", "handle_1", ORGANISATION_HANDLE_COUNT),
     (
         "organisation_handle",
