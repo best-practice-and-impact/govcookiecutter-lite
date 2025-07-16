@@ -9,12 +9,24 @@ def check_repo_name_structure(repo_name: str) -> None:
     """
     if len(repo_name) > 88:
         print("checking repo name length")
-        raise ValueError("Repository name must not exceed 100 characters.")
+        raise ValueError("Repository name must not exceed 88 characters.")
 
 
 if __name__ == "__main__":
 
-    {{ cookiecutter.update({"project_slug": cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }) }}
+    {
+        {
+            cookiecutter.update(  # noqa: F821
+                {
+                    "project_slug": cookiecutter.project_name.lower()  # noqa: F821
+                    | replace(" ", "_")  # noqa: F821
+                    | replace("-", "_")  # noqa: F821
+                    | replace(".", "_")  # noqa: F821
+                    | trim()  # noqa: F821
+                }
+            )
+        }
+    }
 
     # Check the format of the contact email address supplied is a valid one
     check_repo_name_structure("{{ cookiecutter.project_slug }}")
