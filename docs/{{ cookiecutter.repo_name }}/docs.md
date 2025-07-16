@@ -1,2 +1,2 @@
-```{include} ../../{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/docs/repo_docs_README.md
+```{include} ../../{{ cookiecutter.project_slug }}/docs/repo_docs_README.md
 ```

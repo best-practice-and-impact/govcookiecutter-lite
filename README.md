@@ -28,8 +28,8 @@ The cookiecutter template generated for each project will follow this folder str
 ```shell
 .
 └── govcookiecutter/
-    ├── {{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/
-    │   └── {{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/
+    ├── {{ cookiecutter.project_slug }}/
+    │   └── {{ cookiecutter.project_slug }}/
     │       ├── example_modules/
     │       │   ├── __init__.py
     │       │   └── example_module.py
