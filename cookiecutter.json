@@ -3,5 +3,5 @@
   "repository_hosting_platform": ["GitHub", "GitLab"],
   "organisation_handle": "Your GitHub/GitLab organisation name, for example ukgovdatascience",
   "organisational_framework": ["GDS", "N/A"],
-  "project_name": "Your new project name"
+  "project_name": "your_new_project_name"
 }
