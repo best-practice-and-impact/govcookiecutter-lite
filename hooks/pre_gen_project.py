@@ -14,7 +14,7 @@ def check_repo_name_structure(repo_name: str) -> None:
 
 if __name__ == "__main__":
 
+    {{ cookiecutter.update({"project_slug": cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }) }}
+
     # Check the format of the contact email address supplied is a valid one
-    check_repo_name_structure(
-        "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}"
-    )
+    check_repo_name_structure("{{ cookiecutter.project_slug }}")
