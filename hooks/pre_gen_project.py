@@ -33,6 +33,12 @@ def check_repo_name_structure(repo_name: str) -> None:
             raise ValueError(
                 "Repo name must not end with an underscore."
             )
+        else:
+            warnings.warn(
+                "Underscores are discouraged in Python package ",
+                "names unless they improve readability.",
+                UserWarning
+            )
 
 if __name__ == "__main__":
 
