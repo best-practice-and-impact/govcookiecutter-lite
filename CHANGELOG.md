@@ -21,3 +21,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - removed overview setup question, a placeholder has been inserted into readme and project toml
 - removed repo name question, instead derived from project name question
 - hosting platform setup question, PR templates not included in lite version
+- organisation name setup question, replaced with HMG in licence and code of conduct

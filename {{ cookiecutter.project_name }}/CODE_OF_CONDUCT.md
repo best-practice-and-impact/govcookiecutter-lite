@@ -1,4 +1,4 @@
-# Code of conduct for `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}`
+# Code of conduct for `{{ cookiecutter.project_slug }}`
 
 [Our code of conduct can be found at
 `docs/contributor_guide/CODE_OF_CONDUCT.md`][code-of-conduct].

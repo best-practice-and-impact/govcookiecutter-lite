@@ -20,10 +20,10 @@ cookiecutter https://github.com/best-practice-and-impact/govcookiecutter.git
 you'll see a list of prompts to answer; one of them is `project_name`.
 
 Your answer for `project_name` is used to overwrite every instance of
-`{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}`. The first instance is the `govcookiecutter` folder
-`{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}`, which becomes your outputted project!
+`{{ cookiecutter.project_slug }}`. The first instance is the `govcookiecutter` folder
+`{{ cookiecutter.project_slug }}`, which becomes your outputted project!
 
-This means every folder and file contained within the `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}`
+This means every folder and file contained within the `{{ cookiecutter.project_slug }}`
 folder becomes part of your output project, including their content. Anything else
 outside of this folder in `govcookiecutter` will not exist in the outputted project.
 
@@ -33,7 +33,7 @@ The prompts, and their default responses are defined in `cookiecutter.json`. Her
 keys starting with `_` are not shown to the user, but provide template extensions.
 
 One such extension is `jinja2_time.TimeExtension`, which is used to add the correct
-year in the `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/LICENSE` file.
+year in the `{{ cookiecutter.project_slug }}/LICENSE` file.
 
 All other keys are used to inject the user responses throughout the template. This
 happens wherever you see `{{ cookiecutter.{KEY} }}`, where `{KEY}` is the key in
@@ -73,7 +73,7 @@ defined in `hooks/post_gen_project.py`. These hooks only run after a project has
 generated and, if they fail, will rollback the entire project.
 
 Conditional files and folders are defined as `features` in the
-`{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/manifest.json` file, which looks like:
+`{{ cookiecutter.project_slug }}/manifest.json` file, which looks like:
 
 ```
 {
@@ -136,11 +136,11 @@ These are performed in the `hooks/post_gen_project.py`file.
 ## Tests, coverage, and continuous integration
 
 All pre- and post-generation hooks should be fully tested, alongside any generic
-functions that we want to supply to users within the `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}`
+functions that we want to supply to users within the `{{ cookiecutter.project_slug }}`
 package. These tests should be written in `tests` or
-`{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/tests` as appropriate.
+`{{ cookiecutter.project_slug }}/tests` as appropriate.
 
-Coverage also only covers the `hooks` and `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}/{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}` folders.
+Coverage also only covers the `hooks` and `{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}` folders.
 
 ### Testing Jinja templating
 
@@ -148,7 +148,7 @@ Most of the tests are straightforward, and comprehensive. However, to test the J
 injection of user responses, the `test_govcookiecutter_injected_variables.py` script
 adopts a test-driven development approach to completeness.
 
-This test parses all the content of the `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}` folder, and
+This test parses all the content of the `{{ cookiecutter.project_slug }}` folder, and
 counts the number of times the replacement variable and its variations appear.
 
 The constant dictionary variables at the top of the test script define the different
