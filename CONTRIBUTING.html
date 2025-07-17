@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing &mdash; govcookiecutter-lite  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            govcookiecutter-lite
+              <img src="_static/af-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">govcookiecutter-lite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs_repo_README.html">Created folder structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing_guide/docs_contributor_README.html">Contributing guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">govcookiecutter-lite</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Contributing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/CONTRIBUTING.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Link to this heading"></a></h1>
+<p>We love contributions! We’ve compiled this documentation to help you understand our
+contributing guidelines. Please also read our <a class="reference external" href="https://github.com/best-practice-and-impact/govcookiecutter/blob/main/CODE_OF_CONDUCT.md"><code class="docutils literal notranslate"><span class="pre">CODE_OF_CONDUCT.md</span></code></a>.</p>
+<p>If you still have questions, please contact us at ASAP&#64;ons.gov.uk and we’d be happy to help!</p>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>To start contributing, open your terminal and install the package and
+<a class="reference external" href="https://pre-commit.com">pre-commit hooks</a> using:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
+<p>or use the <code class="docutils literal notranslate"><span class="pre">make</span></code> command if it is available on your platform (Windows users may have difficulty):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>install_dev
+</pre></div>
+</div>
+<p>The pre-commit hooks are a security feature to ensure, for example, no secrets,
+large data files, or Jupyter notebook outputs are accidentally committed into the
+repository. For more information and common use cases, please refer to a hook’s
+documentation such as <a class="reference external" href="https://github.com/Yelp/detect-secrets/tree/master">detect-secrets</a> or <a class="reference external" href="https://github.com/kynan/nbstripout">nbstripout</a>.</p>
+</section>
+<section id="code-conventions">
+<h2>Code conventions<a class="headerlink" href="#code-conventions" title="Link to this heading"></a></h2>
+<p>We mainly follow the <a class="reference external" href="https://gds-way.digital.cabinet-office.gov.uk/">GDS Way</a> in our code conventions. For Python code, we
+follow the <a class="reference external" href="https://gds-way.cloudapps.digital/manuals/programming-languages/python/python.html#python-style-guide">GDS Way Python style guide</a>, and use the flake8
+pre-commit hook for linting.</p>
+<section id="git-and-github">
+<h3>Git and GitHub<a class="headerlink" href="#git-and-github" title="Link to this heading"></a></h3>
+<p>We use Git to version control the source code. Please read
+the <a class="reference external" href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html">Quality assurance of code for analysis and research</a> for
+details on Git best practice. This includes how to write good commit messages, how to
+branch appropriately and solve merge conflicts.</p>
+<p>The .gitignore used in this repository was created with generic exclusions
+from <a class="reference external" href="https://www.toptal.com/developers/gitignore">gitignore.io</a>. You will need to enter your programming language of choice (i.e. Python) and click “Create”.</p>
+<p>Pull requests into <code class="docutils literal notranslate"><span class="pre">main</span></code> require at least one approved review.</p>
+</section>
+<section id="spotted-a-bug">
+<h3>Spotted a bug?<a class="headerlink" href="#spotted-a-bug" title="Link to this heading"></a></h3>
+<p>Raise an issue using the bug report template - please check the <a class="reference external" href="https://github.com/best-practice-and-impact/govcookiecutter/issues/new">issues</a> first in case we’re already on it!</p>
+</section>
+<section id="want-to-see-a-new-feature">
+<h3>Want to see a new feature?<a class="headerlink" href="#want-to-see-a-new-feature" title="Link to this heading"></a></h3>
+<p>We’d be delighted to consider it! Please raise an issue using the feature request template after checking the <a class="reference external" href="https://github.com/best-practice-and-impact/govcookiecutter/issues/new">issues</a> in case you can add to an ongoing discussion.</p>
+</section>
+<section id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Link to this heading"></a></h3>
+<p>Local links can be written as normal, but external links should be referenced at the
+bottom of the Markdown file for clarity. For example:</p>
+<p>Use a local link to reference a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file for example, but an external
+link for <a class="reference external" href="https://www.gov.uk/">GOV.UK</a>.</p>
+<p>We also try to wrap Markdown to a line length of 88 characters, but this is not
+strictly enforced in all cases, for example with long hyperlinks.</p>
+</section>
+</section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://docs.pytest.org/">Tests are written using the <code class="docutils literal notranslate"><span class="pre">pytest</span></code> framework</a>, with its configuration in the
+<code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file. Note, only tests in the <code class="docutils literal notranslate"><span class="pre">tests</span></code> folder are run. To run the
+tests, enter the following command in your terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pytest
+</pre></div>
+</div>
+<section id="code-coverage">
+<h3>Code coverage<a class="headerlink" href="#code-coverage" title="Link to this heading"></a></h3>
+<p>Code coverage of Python scripts is measured using the <a class="reference external" href="https://coverage.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">coverage</span></code> Python
+package</a>; its configuration can be found in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>. Note coverage
+only extends to Python scripts in the <code class="docutils literal notranslate"><span class="pre">hooks</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}/{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code> folders.</p>
+<p>To run code coverage, and view it as an HTML report, enter the following command in
+your terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>coverage<span class="w"> </span>run<span class="w"> </span>-m<span class="w"> </span>pytest
+coverage<span class="w"> </span>html
+</pre></div>
+</div>
+<p>or use the <code class="docutils literal notranslate"><span class="pre">make</span></code> command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>coverage_html
+</pre></div>
+</div>
+<p>The HTML report can be accessed at <code class="docutils literal notranslate"><span class="pre">htmlcov/index.html</span></code>.</p>
+</section>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
+<p>Documentation is stored in the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder unless it’s more
+appropriate to store it elsewhere, like this contributing guidance. We
+write our documentation in <a class="reference external" href="https://myst-parser.readthedocs.io/">MyST Markdown</a> for use in <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html">Sphinx</a>, to make
+a searchable wesite. Public sector websites must be accessible by law, and GOV.UK has
+further information on these <a class="reference external" href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">requirements</a>.</p>
+<p>To create the website locally, run the following command in your terminal
+at the top-level of this project:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>docs
+</pre></div>
+</div>
+<p>This should create an HTML version of your documentation accessible from
+<code class="docutils literal notranslate"><span class="pre">docs/_build/index.html</span></code>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

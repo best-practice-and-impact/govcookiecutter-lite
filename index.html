@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>govcookiecutter-lite &mdash; govcookiecutter-lite  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Created folder structure" href="%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs_repo_README.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            govcookiecutter-lite
+              <img src="_static/af-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">govcookiecutter-lite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs_repo_README.html">Created folder structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing_guide/docs_contributor_README.html">Contributing guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">govcookiecutter-lite</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="govcookiecutter-lite">
+<h1><code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code><a class="headerlink" href="#govcookiecutter-lite" title="Link to this heading"></a></h1>
+<section id="what-is-govcookiecutter-lite">
+<h2>What is govcookiecutter-lite?<a class="headerlink" href="#what-is-govcookiecutter-lite" title="Link to this heading"></a></h2>
+<p>A lightweight cookiecutter template for analytical Python-based projects within
+His Majesty’s Government, and wider public sector.</p>
+</section>
+<section id="how-is-the-template-used">
+<h2>How is the template used?<a class="headerlink" href="#how-is-the-template-used" title="Link to this heading"></a></h2>
+<p>This template helps to set up standardised project structures. This cookiecutter template also acts
+as an installable template (python projects only).</p>
+<p>It also provides an Agile, centralised, and lightweight analytical quality assurance
+(AQA) process. <a class="reference external" href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">This helps meet HM Government best practice on producing quality analysis, as
+defined in the Aqua Book</a>.</p>
+<p>govcookiecutter-lite was developed from the original <a class="reference external" href="https://github.com/best-practice-and-impact/govcookiecutter.git">govcookiecutter</a> but has
+minimised the project creation to include only the minimum files and structure to quickly setup
+python packages.</p>
+<p><a class="reference external" href="https://dataingovernment.blog.gov.uk/2021/07/20/govcookiecutter-a-template-for-data-science-projects/">For reasons why we developed <code class="docutils literal notranslate"><span class="pre">govcookiecutter</span></code>, read the blog post</a>, and
+<a class="reference external" href="https://www.youtube.com/watch?v=N7_d3k3uQ_M">watch the live demonstration from March 2021 on version 0.5.3</a>.</p>
+<section id="project-structure-layout">
+<h3>Project structure layout<a class="headerlink" href="#project-structure-layout" title="Link to this heading"></a></h3>
+<p>The cookiecutter template generated for each project will follow this folder structure:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>.
+└──<span class="w"> </span>govcookiecutter-lite/
+<span class="w">    </span>├──<span class="w"> </span><span class="o">{{</span><span class="w"> </span>cookiecutter.project_slug<span class="w"> </span><span class="o">}}</span>/
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span><span class="o">{{</span><span class="w"> </span>cookiecutter.project_slug<span class="w"> </span><span class="o">}}</span>/
+<span class="w">    </span>│<span class="w">       </span>├──<span class="w"> </span>example_modules/
+<span class="w">    </span>│<span class="w">       </span>│<span class="w">   </span>├──<span class="w"> </span>__init__.py
+<span class="w">    </span>│<span class="w">       </span>├──<span class="w"> </span>__init__.py
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>main.py
+<span class="w">    </span>└──<span class="w"> </span>...
+</pre></div>
+</div>
+</section>
+</section>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>First, make sure your system meets the requirements.</p>
+<section id="requirements-to-create-a-cookiecutter-template">
+<h3>Requirements to create a cookiecutter template<a class="headerlink" href="#requirements-to-create-a-cookiecutter-template" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p><strong>Note</strong>
+Contributors have some additional <a class="reference internal" href="CONTRIBUTING.html"><span class="std std-doc">requirements!</span></a></p>
+</div></blockquote>
+<p>To get started your system should meet the following requirements:</p>
+<ol class="arabic simple">
+<li><p>Python 3.9+ installed</p></li>
+<li><p>The <a class="reference internal" href="#installing-the-cookiecutter-package"><code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> package installed</a></p></li>
+</ol>
+<section id="installing-the-cookiecutter-package">
+<h4>Installing the <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> package<a class="headerlink" href="#installing-the-cookiecutter-package" title="Link to this heading"></a></h4>
+<p>There are many ways to install the <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> package. Our recommendation is to
+install it at the system or user level, rather than as a Python package with <code class="docutils literal notranslate"><span class="pre">pip</span></code> or
+<code class="docutils literal notranslate"><span class="pre">conda</span></code>. This ensures it is isolated from the rest of your system, and always available.</p>
+<p>For macOS, open your terminal, and <a class="reference external" href="https://brew.sh/">install <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> with Homebrew</a>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>cookiecutter
+</pre></div>
+</div>
+<p>For Debian/Ubuntu, use the following commands:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>cookiecutter
+</pre></div>
+</div>
+<p>Otherwise, you can install <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code> — you may wish to create a virtual
+environment first:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>cookiecutter
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="using-govcookiecutter-lite">
+<h2>Using govcookiecutter-lite<a class="headerlink" href="#using-govcookiecutter-lite" title="Link to this heading"></a></h2>
+<p>Next, open your
+terminal, navigate to the directory where you want your new repository to exist. Then run the following command for the latest stable release:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>cookiecutter<span class="w"> </span>https://github.com/best-practice-and-impact/govcookiecutter-lite.git
+</pre></div>
+</div>
+<p>or for a specific branch, tag, or commit SHA <code class="docutils literal notranslate"><span class="pre">{SPECIFIC}</span></code>, run:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>cookiecutter<span class="w"> </span>https://github.com/best-practice-and-impact/govcookiecutter-lite.git<span class="w"> </span>--checkout<span class="w"> </span><span class="o">{</span>SPECIFIC<span class="o">}</span>
+</pre></div>
+</div>
+<p>Follow the prompts; if you are asked to re-download <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code>, input <code class="docutils literal notranslate"><span class="pre">yes</span></code>.
+Default responses are shown in the squared brackets; to use them, leave your response
+blank, and press enter.</p>
+<p>Once you’ve answered all the prompts, your project will be created. Then:</p>
+<ol class="arabic">
+<li><p>Set up a Python virtual environment — <a class="reference external" href="https://www.pluralsight.com/tech-blog/managing-python-environments/">there are many ways to set up a virtual
+environment</a>, so we’ll let you decide what’s best for you!</p></li>
+<li><p>In your terminal, navigate to your new project, and initialise Git</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>init
+</pre></div>
+</div>
+</li>
+<li><p>Install the necessary packages using <code class="docutils literal notranslate"><span class="pre">pip</span></code> and the pre-commit hooks:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>pip<span class="w"> </span>setuptools
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>dev<span class="o">]</span>
+pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
+<p>or use the <code class="docutils literal notranslate"><span class="pre">make</span></code> command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>install_dev
+</pre></div>
+</div>
+</li>
+<li><p>Stage all your project files, and make your first commit</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Once you’ve completed these steps, <a class="reference internal" href="#optional-changes-to-consider-post-project-creation">consider making some optional changes before
+kicking off your project development</a>.</p>
+</section>
+<section id="optional-changes-to-consider-post-project-creation">
+<h2>Optional changes to consider post-project creation<a class="headerlink" href="#optional-changes-to-consider-post-project-creation" title="Link to this heading"></a></h2>
+<p>Here are some suggested changes to make before your first commit:</p>
+<ul>
+<li><p>consider <a class="reference external" href="https://github.com/cruft/cruft">using the <code class="docutils literal notranslate"><span class="pre">cruft</span></code> package to integrate future <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code>
+releases</a></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>cruft
+cruft<span class="w"> </span>link<span class="w"> </span>https://github.com/best-practice-and-impact/govcookiecutter-lite
+</pre></div>
+</div>
+</li>
+<li><p>make sure the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> reflects what you want to do with your project</p></li>
+<li><p>have a look inside the <code class="docutils literal notranslate"><span class="pre">docs/aqa</span></code> folder, as you may want to modify some of this
+analytical quality assurance documentation (AQA), for example the AQA plan</p></li>
+<li><p>(if present) confirm that the pull or merge request template checklists meet your
+requirements</p>
+<ul class="simple">
+<li><p>These can be found at <code class="docutils literal notranslate"><span class="pre">.github/pull_request_template.md</span></code> (GitHub), or in
+<code class="docutils literal notranslate"><span class="pre">.gitlab/merge_request_templates</span></code> folder (GitLab)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="licence">
+<h2>Licence<a class="headerlink" href="#licence" title="Link to this heading"></a></h2>
+<p>Unless stated otherwise, the codebase is released under the MIT License. This covers
+both the codebase and any sample code in the documentation. The documentation is ©
+Crown copyright and available under the terms of the Open Government 3.0 licence.</p>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading"></a></h2>
+<p>If you want to help us build, and improve <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code>, view our <a class="reference internal" href="CONTRIBUTING.html"><span class="std std-doc">contributing
+guidelines</span></a>.</p>
+</section>
+<section id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="http://drivendata.github.io/cookiecutter-data-science/">This template is based off the DrivenData Cookiecutter Data Science
+project</a>. Specifically, it uses a modified version of the <code class="docutils literal notranslate"><span class="pre">help</span></code> commands in the <code class="docutils literal notranslate"><span class="pre">Makefile</span></code>s.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs_repo_README.html" class="btn btn-neutral float-right" title="Created folder structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

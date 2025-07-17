@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modifying govcookiecutter-lite &mdash; govcookiecutter-lite  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            govcookiecutter-lite
+              <img src="../_static/af-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">govcookiecutter-lite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs_repo_README.html">Created folder structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_contributor_README.html">Contributing guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">govcookiecutter-lite</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Modifying <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/contributing_guide/modify_govcookiecutter-lite.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="modifying-govcookiecutter-lite">
+<h1>Modifying <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code><a class="headerlink" href="#modifying-govcookiecutter-lite" title="Link to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It’s strongly recommended you build an example project to test that your changes work!</p>
+</div>
+<p><a class="reference external" href="https://cookiecutter.readthedocs.io"><code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code> uses the <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> Python package</a> to build
+template project structures. In turn, <a class="reference external" href="https://jinja.palletsprojects.com"><code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> uses Jinja templating to inject
+user-defined variables</a> into files, file names, and folder names. Most of these
+variables are based on answers to prompts when you run the <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> command.</p>
+<section id="cookiecutter-template-generation">
+<h2><code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> template generation<a class="headerlink" href="#cookiecutter-template-generation" title="Link to this heading"></a></h2>
+<p>When you open your terminal and run:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cookiecutter<span class="w"> </span>https://github.com/best-practice-and-impact/govcookiecutter-lite.git
+</pre></div>
+</div>
+<p>you’ll see a list of prompts to answer; one of them is <code class="docutils literal notranslate"><span class="pre">project_name</span></code>.</p>
+<p>Your answer for <code class="docutils literal notranslate"><span class="pre">project_name</span></code> is used to overwrite every instance of
+<code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code>. The first instance is the <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code> folder
+<code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code>, which becomes your outputted project!</p>
+<p>This means every folder and file contained within the <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code>
+folder becomes part of your output project, including their content. Anything else
+outside of this folder in <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code> will not exist in the outputted project.</p>
+<section id="understanding-cookiecutter-json">
+<h3>Understanding <code class="docutils literal notranslate"><span class="pre">cookiecutter.json</span></code><a class="headerlink" href="#understanding-cookiecutter-json" title="Link to this heading"></a></h3>
+<p>The prompts, and their default responses are defined in <code class="docutils literal notranslate"><span class="pre">cookiecutter.json</span></code>. Here, any
+keys starting with <code class="docutils literal notranslate"><span class="pre">_</span></code> are not shown to the user, but provide template extensions.</p>
+<p>One such extension is <code class="docutils literal notranslate"><span class="pre">jinja2_time.TimeExtension</span></code>, which is used to add the correct
+year in the <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}/LICENSE</span></code> file.</p>
+<p>All other keys are used to inject the user responses throughout the template. This
+happens wherever you see <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.{KEY}</span> <span class="pre">}}</span></code>, where <code class="docutils literal notranslate"><span class="pre">{KEY}</span></code> is the key in
+question.</p>
+<p>The values in <code class="docutils literal notranslate"><span class="pre">cookiecutter.json</span></code> are the default responses, shown in squared brackets
+to the user. If the user does not enter a response, these default values are used.
+Values that are lists are shown as numerical options to the user, with the first list
+element as the default value.</p>
+<p>Note that these default values can also contain Jinja templating!</p>
+</section>
+</section>
+<section id="validating-user-entries">
+<h2>Validating user entries<a class="headerlink" href="#validating-user-entries" title="Link to this heading"></a></h2>
+<p>User entries are validated with pre-generation hooks, which are defined in
+<code class="docutils literal notranslate"><span class="pre">hooks/pre_gen_project.py</span></code>. These hooks run before a project is created and, if they
+fail, will not create the project.</p>
+<p>The only supported validation currently is for a <a class="reference external" href="https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address">valid email address, based on the
+HTML5 standard for email address format</a>.</p>
+</section>
+<section id="conditional-files-and-or-folders">
+<h2>Conditional files and/or folders<a class="headerlink" href="#conditional-files-and-or-folders" title="Link to this heading"></a></h2>
+<p>Conditional folders and/or files are items than only exist if actively selected for the
+user. For example, if users select <code class="docutils literal notranslate"><span class="pre">No</span></code> for the <code class="docutils literal notranslate"><span class="pre">using_R</span></code> prompt, any R files and
+content is removed from their outputted project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Folder and file names with Jinja templating</p>
+<p>Do not use Jinja templating for conditional folders and/or files, as certain characters
+may not be supported on all operating systems.</p>
+</div>
+<p>This functionality is provided by post-generation hooks in <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code>, which are
+defined in <code class="docutils literal notranslate"><span class="pre">hooks/post_gen_project.py</span></code>. These hooks only run after a project has been
+generated and, if they fail, will rollback the entire project.</p>
+<p>Conditional files and folders are defined as <code class="docutils literal notranslate"><span class="pre">features</span></code> in the
+<code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}/manifest.json</span></code> file, which looks like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;features&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;A name&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A description.&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;remove&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">cookiecutter</span><span class="o">.</span><span class="p">{</span><span class="n">KEY</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="n">VALUE</span><span class="p">}</span> <span class="o">%</span><span class="p">}</span><span class="n">true</span><span class="p">{</span><span class="o">%</span> <span class="k">else</span> <span class="o">%</span><span class="p">}</span><span class="n">false</span><span class="p">{</span><span class="o">%</span> <span class="n">endif</span> <span class="o">%</span><span class="p">},</span>
+      <span class="s2">&quot;resources&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;list&quot;</span><span class="p">,</span> <span class="s2">&quot;of&quot;</span><span class="p">,</span> <span class="s2">&quot;files&quot;</span><span class="p">,</span> <span class="s2">&quot;and/or&quot;</span><span class="p">,</span> <span class="s2">&quot;folders&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">{KEY}</span></code> and <code class="docutils literal notranslate"><span class="pre">{VALUE}</span></code> are <code class="docutils literal notranslate"><span class="pre">cookiecutter.json</span></code> keys and values.</p>
+<p>This works by using Jinja conditional templating to either set the <code class="docutils literal notranslate"><span class="pre">remove</span></code> value to
+true or false. The post-generation hook then scans through this JSON file deleting all
+files and folders listed in the <code class="docutils literal notranslate"><span class="pre">resources</span></code> value where <code class="docutils literal notranslate"><span class="pre">remove</span> <span class="pre">==</span> <span class="pre">true</span></code>.</p>
+<section id="changing-conditional-folders-and-files">
+<h3>Changing conditional folders and files<a class="headerlink" href="#changing-conditional-folders-and-files" title="Link to this heading"></a></h3>
+<p>If an existing feature has a <code class="docutils literal notranslate"><span class="pre">remove</span></code> condition that meets your needs, amend its
+<code class="docutils literal notranslate"><span class="pre">resources</span></code> list to change the folders/files that will be removed.</p>
+<p>To add a new feature, add a dictionary within the <code class="docutils literal notranslate"><span class="pre">features</span></code> list, which has at least
+the <code class="docutils literal notranslate"><span class="pre">remove</span></code> and <code class="docutils literal notranslate"><span class="pre">resources</span></code> keys. Add your Jinja conditional for the <code class="docutils literal notranslate"><span class="pre">remove</span></code> value,
+and a list of files/folders for the <code class="docutils literal notranslate"><span class="pre">resources</span></code> key. For documentation purposes, it’s
+good practice to add <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">description</span></code> keys as well!</p>
+<p>To remove a feature, delete the appropriate dictionary from the <code class="docutils literal notranslate"><span class="pre">features</span></code> list.</p>
+</section>
+</section>
+<section id="conditional-file-content">
+<h2>Conditional file content<a class="headerlink" href="#conditional-file-content" title="Link to this heading"></a></h2>
+<p>Jinja conditional statements can be used display content based on the user responses.
+For example, for the following Markdown:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">### `CONTRIBUTING.md`</span>
+
+The contributing guidelines for this project.
+
+<span class="gu">### `LICENSE`</span>
+
+The licence for this project...
+</pre></div>
+</div>
+<p>the <code class="docutils literal notranslate"><span class="pre">DESCRIPTION</span></code> section is conditional on the user response to the <code class="docutils literal notranslate"><span class="pre">using_R</span></code> prompt.</p>
+<p>Notice the hyphen before the trailing <code class="docutils literal notranslate"><span class="pre">%</span></code> in each Jinja statement; this hyphen controls
+blank space after the statement. A hyphen after the leading <code class="docutils literal notranslate"><span class="pre">%</span></code> in a Jinja statement
+controls blank space before the element.</p>
+</section>
+<section id="replacing-folders-and-files">
+<h2>Replacing folders and files<a class="headerlink" href="#replacing-folders-and-files" title="Link to this heading"></a></h2>
+<p>[Replacing folders and files a more involved change, and is currently supported for
+AQA frameworks and pull/merge request templates only][docs-organisational-frameworks].
+These are performed in the <code class="docutils literal notranslate"><span class="pre">hooks/post_gen_project.py</span></code>file.</p>
+</section>
+<section id="tests-coverage-and-continuous-integration">
+<h2>Tests, coverage, and continuous integration<a class="headerlink" href="#tests-coverage-and-continuous-integration" title="Link to this heading"></a></h2>
+<p>All pre- and post-generation hooks should be fully tested, alongside any generic
+functions that we want to supply to users within the <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code>
+package. These tests should be written in <code class="docutils literal notranslate"><span class="pre">tests</span></code> or
+<code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}/tests</span></code> as appropriate.</p>
+<p>Coverage also only covers the <code class="docutils literal notranslate"><span class="pre">hooks</span></code> and <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}/{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code> folders.</p>
+<section id="testing-jinja-templating">
+<h3>Testing Jinja templating<a class="headerlink" href="#testing-jinja-templating" title="Link to this heading"></a></h3>
+<p>Most of the tests are straightforward, and comprehensive. However, to test the Jinja
+injection of user responses, the <code class="docutils literal notranslate"><span class="pre">test_govcookiecutter_injected_variables.py</span></code> script
+adopts a test-driven development approach to completeness.</p>
+<p>This test parses all the content of the <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">cookiecutter.project_slug</span> <span class="pre">}}</span></code> folder, and
+counts the number of times the replacement variable and its variations appear.</p>
+<p>The constant dictionary variables at the top of the test script define the different
+variations of Jinja templating expected for each prompt, and their expected counts.
+The dictionary keys are replaced during the test with the test input variables.</p>
+<p>If you modify the content, beware that these counts may change, so you will have to
+change these counts to pass the tests.</p>
+</section>
+<section id="continuous-integration">
+<h3>Continuous integration<a class="headerlink" href="#continuous-integration" title="Link to this heading"></a></h3>
+<p>Continuous integration (CI) is provided by GitHub Actions. For all pushes to the
+repository, GitHub Actions will:</p>
+<ul class="simple">
+<li><p>install the requirements</p></li>
+<li><p>run pre-commit hooks on all files</p></li>
+<li><p>create the documentation to check for errors and warnings</p>
+<ul>
+<li><p>only errors are checked for Windows</p></li>
+</ul>
+</li>
+<li><p>check for broken external links in the documentation</p></li>
+<li><p>run tests and coverage</p></li>
+<li><p>upload coverage reports to CodeCov</p></li>
+</ul>
+<p>These “on push” CI checks are run on Ubuntu, macOS, and Windows operating systems, as
+well as Python 3.6+. This Action can be found at <code class="docutils literal notranslate"><span class="pre">workflows/govcookiecutter-build.yml</span></code>.</p>
+<p>When a pull request is raised, GitHub Actions will also:</p>
+<ul class="simple">
+<li><p>build an example project</p></li>
+<li><p>navigate into the example project</p></li>
+<li><p>initialise Git</p></li>
+<li><p>install requirements</p></li>
+<li><p>build the example project documentation, checking for errors but not warnings</p></li>
+<li><p>check for broken external links in the documentation</p></li>
+<li><p>run pre-commit hooks on all files</p></li>
+</ul>
+<p>These “on pull request” CI checks are run on Ubuntu, and macOS operating systems, as
+well as Python 3.6+, and for example projects with or without R 4.0.4+.</p>
+<p><a class="reference external" href="https://github.com/best-practice-and-impact/govcookiecutter/issues">To understand why only certain operating systems are supported for GitHub Actions,
+see GitHub issues 29 and 30</a>.</p>
+</section>
+</section>
+<section id="releases">
+<h2>Releases<a class="headerlink" href="#releases" title="Link to this heading"></a></h2>
+<p>Pull requests are raised on GitHub, and approved features are merged into <code class="docutils literal notranslate"><span class="pre">main</span></code>. <a class="reference external" href="https://semver.org/">We
+then use semantic versioning to number our releases</a>. This helps our users
+select a different version of <code class="docutils literal notranslate"><span class="pre">govcookiecutter-lite</span></code> to use based on their individual needs.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
