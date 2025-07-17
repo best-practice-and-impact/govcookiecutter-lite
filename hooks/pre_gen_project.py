@@ -35,7 +35,7 @@ def check_repo_name_structure(repo_name: str) -> None:
             )
         else:
             warnings.warn(
-                "Underscores are discouraged in Python package ",
+                "Underscores are discouraged in Python package " +
                 "names unless they improve readability.",
                 UserWarning
             )
