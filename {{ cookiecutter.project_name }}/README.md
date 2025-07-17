@@ -36,7 +36,7 @@ python -m pip install -U pip setuptools
 pip install -e .
 ```
 
-### Install for contributors (Python only)
+### Install for contributors/developers
 
 To install the contributing requirements, use:
 ```shell
@@ -52,31 +52,7 @@ This saves a lot of time when you test your code.
 Remember to update the setup and requirement files inline with any changes to your
 package.
 
-## Running the pipeline (Python only)
 
-The entry point for the pipeline is stored within the package and called `run_pipeline.py`.
-To run the pipeline, run the following code in the terminal (either in the root directory of the
-project, or by specifying the path to `run_pipeline.py` from elsewhere).
-
-```shell
-python src/{{ cookiecutter.project_slug }}/run_pipeline.py
-```
-
-Alternatively, most Python IDEs allow you to run the code directly using a `run` button.
-
-## Required secrets and credentials
-
-To run this project, you need a `.secrets` file with [secrets/credentials as
-environmental variables][docs-loading-environment-variables-secrets]. The
-secrets/credentials should have the following environment variable name(s):
-
-| Secret/credential | Environment variable name | Description                                |
-|-------------------|---------------------------|--------------------------------------------|
-| Secret 1          | `SECRET_VARIABLE_1`       | Plain English description of Secret 1.     |
-| Credential 1      | `CREDENTIAL_VARIABLE_1`   | Plain English description of Credential 1. |
-
-Once you've added them, [load these environment variables][docs-loading-environment-variables] using
-`.env`.
 
 ## Project structure layout
 
