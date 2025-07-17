@@ -134,7 +134,7 @@ An overview of the Git repository and aims of `govcookiecutter-lite`, including 
 
 ### `requirements.txt`
 
-A list of Python package dependencies for the `govcookiecutter-lite` repository,
+A list of Python package dependencies for the `govcookiecutter` repository,
 which can be installed using the `pip install` command:
 
 ```shell
