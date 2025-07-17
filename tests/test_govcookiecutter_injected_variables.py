@@ -7,17 +7,17 @@ import pytest
 # Define the expected counts for each cookiecutter variable - any counts that deviate
 # because of other variables are listed at the end of each dictionary
 ORGANISATION_HANDLE_COUNT = {
-    '"{{ cookiecutter.organisation_handle }}"': 1,
+    '"{{ cookiecutter.organisation_handle }}"': 0,
     "`{{ cookiecutter.organisation_handle }}`": 2,
     'u"{{ cookiecutter.organisation_handle }}",': 0,
     '[u"{{ cookiecutter.organisation_handle }}"],': 0,
     '"{{ cookiecutter.organisation_handle }}",': 0,
 }
 PROJECT_NAME_COUNT = {
-    '"{{ cookiecutter.project_name }}"': 1,
+    '"{{ cookiecutter.project_name }}"': 0,
     '"{{ cookiecutter.project_name }}",': 0,
     'u"{{ cookiecutter.project_name }}': 0,
-    "{{ cookiecutter.project_name }}": 2,
+    "{{ cookiecutter.project_name }}": 1,
 }
 
 
@@ -109,7 +109,7 @@ args_injected_counts_correct = [
     (
         "project_name",
         "Project_2",
-        {**PROJECT_NAME_COUNT, "{{ cookiecutter.project_name }}": 2},
+        {**PROJECT_NAME_COUNT, "{{ cookiecutter.project_name }}": 1},
     ),
 ]
 

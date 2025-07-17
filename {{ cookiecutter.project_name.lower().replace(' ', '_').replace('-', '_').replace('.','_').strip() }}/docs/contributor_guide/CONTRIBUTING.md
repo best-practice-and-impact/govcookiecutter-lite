@@ -16,11 +16,6 @@ pip install -e .[dev]
 pre-commit install
 ```
 
-or use the `make` command:
-```shell
-make install_dev
-```
-
 The pre-commit hooks are a security feature to ensure, for example, no secrets,
 large data files, or Jupyter notebook outputs are accidentally committed into the
 repository. For more information and common use cases, please refer to a hook's
@@ -79,31 +74,13 @@ coverage run -m pytest
 coverage html
 ```
 
-or use the `make` command:
-
-```shell
-make coverage_html
-```
-
 The HTML report can be accessed at `htmlcov/index.html`.
 
 ## Documentation
 
 Documentation is stored in the `docs` folder unless it's more
 appropriate to store it elsewhere, like this contributing guidance. We
-write our documentation in [MyST Markdown][myst] for use in [Sphinx][sphinx], to make
-a searchable wesite. Public sector websites must be accessible by law, and GOV.UK has
-further information on these [requirements][gov-uk-accessibility].
-
-To create the website locally, run the following command in your terminal
-at the top-level of this project:
-
-```shell
-make docs
-```
-
-This should create an HTML version of your documentation accessible from
-`docs/_build/index.html`.
+write our documentation in [MyST Markdown][myst].
 
 [code-of-conduct]: https://github.com/best-practice-and-impact/govcookiecutter/blob/main/%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs/contributor_guide/CODE_OF_CONDUCT.md
 [coverage]: https://coverage.readthedocs.io/
@@ -112,10 +89,8 @@ This should create an HTML version of your documentation accessible from
 [gds-way-python]: https://gds-way.cloudapps.digital/manuals/programming-languages/python/python.html#python-style-guide
 [gds-way]: https://gds-way.digital.cabinet-office.gov.uk/
 [gitignore-io]: https://www.toptal.com/developers/gitignore
-[gov-uk-accessibility]: https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps
 [gov-uk]: https://www.gov.uk/
 [myst]: https://myst-parser.readthedocs.io/
 [nbstripout-repo]: https://github.com/kynan/nbstripout
 [pre-commit]: https://pre-commit.com
 [pytest]: https://docs.pytest.org/
-[sphinx]: https://www.sphinx-doc.org/en/master/index.html
