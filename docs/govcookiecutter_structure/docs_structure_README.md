@@ -1,6 +1,6 @@
-# `govcookiecutter` structure
+# `govcookiecutter-lite` structure
 
-This page provides information on the `govcookiecutter` repository structure.
+This page provides information on the `govcookiecutter-lite` repository structure.
 Further detail on folder contents is available:
 
 ```{toctree}
@@ -38,7 +38,7 @@ to the repository. The baseline file flags secret-like data that the user delibe
 
 ### `CHANGELOG.md`
 
-A file describing the changes made to `govcookiecutter` over time, including unreleased
+A file describing the changes made to `govcookiecutter-lite` over time, including unreleased
 and upcoming changes.
 
 ### `CODE_OF_CONDUCT.md`
@@ -55,7 +55,7 @@ A file to store shared fixture functions for the `pytest` tests in the `tests` f
 ### `CONTRIBUTING.md`
 
 The contributing guidelines for this project, explaining how contributors can
-engage with `govcookiecutter`.
+engage with `govcookiecutter-lite`.
 
 ### `cookiecutter.json`
 
@@ -130,11 +130,11 @@ This HTML report can be accessed at `htmlcov/index.html`.
 
 ### `README.md`
 
-An overview of the Git repository and aims of `govcookiecutter`, including all necessary instructions to run the code.
+An overview of the Git repository and aims of `govcookiecutter-lite`, including all necessary instructions to run the code.
 
 ### `requirements.txt`
 
-A list of Python package dependencies for the `govcookiecutter` repository,
+A list of Python package dependencies for the `govcookiecutter-lite` repository,
 which can be installed using the `pip install` command:
 
 ```shell

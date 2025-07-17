@@ -35,7 +35,7 @@ If you need information on this website in a different format like accessible PD
 large print, easy read, audio recording or braille:
 
 - email [gsshelp@statistics.gov.uk][email]
-- raise an issue on the [`govcookiecutter` GitHub repository][github-issues]
+- raise an issue on the [`govcookiecutter-lite` GitHub repository][github-issues]
 
 ## Reporting accessibility problems with this website
 

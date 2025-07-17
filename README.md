@@ -1,4 +1,4 @@
-# `govcookiecutter`
+# `govcookiecutter-lite`
 
 ## What is govcookiecutter-lite?
 
@@ -32,10 +32,8 @@ The cookiecutter template generated for each project will follow this folder str
     │   └── {{ cookiecutter.project_slug }}/
     │       ├── example_modules/
     │       │   ├── __init__.py
-    │       │   └── example_module.py
     │       ├── __init__.py
-    │       ├── example_config.yml
-    │       └── run_pipeline.py
+    │       └── main.py
     └── ...
 ```
 
@@ -81,7 +79,7 @@ environment first:
 python -m pip install --user cookiecutter
 ```
 
-## Using govcookiecutter
+## Using govcookiecutter-lite
 
 Next, open your
 terminal, navigate to the directory where you want your new repository to exist. Then run the following command for the latest stable release:
@@ -96,7 +94,7 @@ or for a specific branch, tag, or commit SHA `{SPECIFIC}`, run:
 python -m cookiecutter https://github.com/best-practice-and-impact/govcookiecutter-lite.git --checkout {SPECIFIC}
 ```
 
-Follow the prompts; if you are asked to re-download `govcookiecutter`, input `yes`.
+Follow the prompts; if you are asked to re-download `govcookiecutter-lite`, input `yes`.
 Default responses are shown in the squared brackets; to use them, leave your response
 blank, and press enter.
 
@@ -135,11 +133,11 @@ kicking off your project development](#optional-changes-to-consider-post-project
 
 Here are some suggested changes to make before your first commit:
 
-- consider [using the `cruft` package to integrate future `govcookiecutter`
+- consider [using the `cruft` package to integrate future `govcookiecutter-lite`
   releases][cruft]
   ```shell
   pip install cruft
-  cruft link https://github.com/best-practice-and-impact/govcookiecutter
+  cruft link https://github.com/best-practice-and-impact/govcookiecutter-lite
   ```
 - make sure the `README.md` reflects what you want to do with your project
 - have a look inside the `docs/aqa` folder, as you may want to modify some of this
@@ -157,7 +155,7 @@ Crown copyright and available under the terms of the Open Government 3.0 licence
 
 ## Contributing
 
-If you want to help us build, and improve `govcookiecutter`, view our [contributing
+If you want to help us build, and improve `govcookiecutter-lite`, view our [contributing
 guidelines](./CONTRIBUTING.md).
 
 ## Acknowledgements
@@ -175,4 +173,3 @@ project][drivendata]. Specifically, it uses a modified version of the `help` com
 [issue-windows-os]: https://github.com/best-practice-and-impact/govcookiecutter/issues/20
 [pluralsight]: https://www.pluralsight.com/tech-blog/managing-python-environments/
 [youtube]: https://www.youtube.com/watch?v=N7_d3k3uQ_M
-[issue20]: https://github.com/best-practice-and-impact/govcookiecutter/issues/20

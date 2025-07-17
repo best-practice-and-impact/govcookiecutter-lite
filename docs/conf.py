@@ -1,4 +1,4 @@
-# `govcookiecutter` documentation build configuration file
+# `govcookiecutter-lite` documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #

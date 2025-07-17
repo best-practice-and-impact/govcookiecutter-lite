@@ -1,10 +1,10 @@
-# Modifying `govcookiecutter`
+# Modifying `govcookiecutter-lite`
 
 ```{warning}
 It's strongly recommended you build an example project to test that your changes work!
 ```
 
-[`govcookiecutter` uses the `cookiecutter` Python package][cookiecutter] to build
+[`govcookiecutter-lite` uses the `cookiecutter` Python package][cookiecutter] to build
 template project structures. In turn, [`cookiecutter` uses Jinja templating to inject
 user-defined variables][jinja] into files, file names, and folder names. Most of these
 variables are based on answers to prompts when you run the `cookiecutter` command.
@@ -14,18 +14,18 @@ variables are based on answers to prompts when you run the `cookiecutter` comman
 When you open your terminal and run:
 
 ```shell
-cookiecutter https://github.com/best-practice-and-impact/govcookiecutter.git
+cookiecutter https://github.com/best-practice-and-impact/govcookiecutter-lite.git
 ```
 
 you'll see a list of prompts to answer; one of them is `project_name`.
 
 Your answer for `project_name` is used to overwrite every instance of
-`{{ cookiecutter.project_slug }}`. The first instance is the `govcookiecutter` folder
+`{{ cookiecutter.project_slug }}`. The first instance is the `govcookiecutter-lite` folder
 `{{ cookiecutter.project_slug }}`, which becomes your outputted project!
 
 This means every folder and file contained within the `{{ cookiecutter.project_slug }}`
 folder becomes part of your output project, including their content. Anything else
-outside of this folder in `govcookiecutter` will not exist in the outputted project.
+outside of this folder in `govcookiecutter-lite` will not exist in the outputted project.
 
 ### Understanding `cookiecutter.json`
 
@@ -68,7 +68,7 @@ may not be supported on all operating systems.
 
 ```
 
-This functionality is provided by post-generation hooks in `govcookiecutter`, which are
+This functionality is provided by post-generation hooks in `govcookiecutter-lite`, which are
 defined in `hooks/post_gen_project.py`. These hooks only run after a project has been
 generated and, if they fail, will rollback the entire project.
 
@@ -194,7 +194,7 @@ see GitHub issues 29 and 30][github-issues].
 
 Pull requests are raised on GitHub, and approved features are merged into `main`. [We
 then use semantic versioning to number our releases][semver]. This helps our users
-select a different version of `govcookiecutter` to use based on their individual needs.
+select a different version of `govcookiecutter-lite` to use based on their individual needs.
 
 [cookiecutter]: https://cookiecutter.readthedocs.io
 [github-issues]: https://github.com/best-practice-and-impact/govcookiecutter/issues
