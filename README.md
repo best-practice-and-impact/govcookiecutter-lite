@@ -27,7 +27,7 @@ The cookiecutter template generated for each project will follow this folder str
 
 ```shell
 .
-└── govcookiecutter/
+└── govcookiecutter-lite/
     ├── {{ cookiecutter.project_slug }}/
     │   └── {{ cookiecutter.project_slug }}/
     │       ├── example_modules/

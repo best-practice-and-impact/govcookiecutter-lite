@@ -49,7 +49,7 @@ source_suffix = {
 master_doc = "index"
 
 # General information about the project.
-project = "govcookiecutter"
+project = "govcookiecutter-lite"
 author = "Office for National Statistics"
 
 # List of patterns, relative to source directory, that match files and directories to
