@@ -8,4 +8,5 @@
 self
 ./{{ cookiecutter.repo_name }}/docs_repo_README.md
 ./contributing_guide/docs_contributor_README.md
+./accessibility.md
 ```
