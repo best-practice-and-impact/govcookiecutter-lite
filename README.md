@@ -156,7 +156,7 @@ If you want to help us build, and improve `govcookiecutter-lite`, view our [cont
 guidelines](./CONTRIBUTING.md).
 
 ## Acknowledgements
-
+ 
 [This template is based off the DrivenData Cookiecutter Data Science
 project][drivendata]. Specifically, it uses a modified version of the `help` commands in the `Makefile`s.
 
