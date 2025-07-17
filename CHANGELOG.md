@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -
 
 ### Added
+
+### Fixed
+
+### Changed
+
+### Removed
+
+## [1.0.0] - 17th July 2025
+
+### Added
 - Repository name structure check, to ensure best practice
 
 ### Fixed
@@ -25,3 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - hosting platform setup question, PR templates not included in lite version
 - organisation name setup question, replaced with HMG in licence and code of conduct
 - framework setup question, default aqa plan is replaced with framework from GDS
+
+
+[1.0.0]: https://github.com/best-practice-and-impact/govcookiecutter-lite/tree/1.0.0
