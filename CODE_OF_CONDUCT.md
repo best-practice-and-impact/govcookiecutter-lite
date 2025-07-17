@@ -1,4 +1,4 @@
-# Code of conduct for `govcookiecutter`
+# Code of conduct for `govcookiecutter-lite`
 
 All contributors to this repository hosted by `best-practice-and-impact` are expected to follow the
 Contributor Covenant Code of Conduct. Those working within HM Government are also expected to follow the [Civil Service
@@ -10,8 +10,8 @@ Code][civil-service-code].
 
 Where this Code of Conduct says:
 
-- "Project", we mean this GitHub repository, `govcookiecutter` ;
-- "Maintainer", we mean active developers of `govcookiecutter`; and
+- "Project", we mean this GitHub repository, `govcookiecutter-lite` ;
+- "Maintainer", we mean active developers of `govcookiecutter-lite`; and
 - "Leadership", we mean `best-practice-and-impact` organisation owners, line managers, and other
   leadership within the Office for National Statistics.
 

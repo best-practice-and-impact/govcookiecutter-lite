@@ -3,12 +3,12 @@ from typing import Dict, List
 
 from dotenv import dotenv_values
 
-# Define a path to the `govcookiecutter` template directory, and its `.env` file
+# Define a path to the `govcookiecutter-lite` template directory, and its `.env` file
 DIR_TEMPLATE = Path("{{ cookiecutter.project_slug }}")
 PATH_TEMPLATE_ENV = DIR_TEMPLATE.joinpath(".env")
 
 # Define a list of directory names to recursively ignore, as well as a list of
-# directory names to ignore at the root-level of the `govcookiecutter` template
+# directory names to ignore at the root-level of the `govcookiecutter-lite` template
 # directory, and a list of dictionary names to ignore in certain root-level directories
 EXCLUDE_DIR_NAMES = ["__pycache__", "example_modules"]
 EXCLUDE_ROOT_DIR_NAMES = [*EXCLUDE_DIR_NAMES, ".govcookiecutter"]
@@ -56,10 +56,10 @@ def loop_directories_children(
 
 def get_actual_env_variables(path_env: Path) -> Dict[str, Path]:
     """Get the environment variables and values for directories in the `.env` file of
-     the `govcookiecutter` template.
+     the `govcookiecutter-lite` template.
 
     Args:
-        path_env: A file path to the `.env` file of the `govcookiecutter` template.
+        path_env: A file path to the `.env` file of the `govcookiecutter-lite` template.
 
     Returns:
         A dictionary where the keys are the names of the directory variables, and the
@@ -81,10 +81,10 @@ def define_expected_env_variables(
     exclude_sub_folders_in_parent_folders: List[str],
 ) -> Dict[str, Path]:
     """Get the expected directory variables and values in the `.env` file of the
-    `govcookiecutter` template.
+    `govcookiecutter-lite` template.
 
     Args:
-        folder: A folder path to the `govcookiecutter` template folder.
+        folder: A folder path to the `govcookiecutter-lite` template folder.
         exclude_folders: A list of folder names to ignore when encountered.
         exclude_root_folders: A list of root-level folder names in `folder` to ignore.
         exclude_sub_folders_in_parent_folders: A list of folder names at the root-level
@@ -92,7 +92,7 @@ def define_expected_env_variables(
 
     Returns:
         A dictionary where the keys are expected directory variables, and the values
-        are the expected directory paths of the `.env` file in the `govcookiecutter`
+        are the expected directory paths of the `.env` file in the `govcookiecutter-lite`
         template directory `folder`.
 
     """

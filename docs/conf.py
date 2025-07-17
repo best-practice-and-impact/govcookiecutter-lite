@@ -1,4 +1,4 @@
-# `govcookiecutter` documentation build configuration file
+# `govcookiecutter-lite` documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -49,7 +49,7 @@ source_suffix = {
 master_doc = "index"
 
 # General information about the project.
-project = "govcookiecutter"
+project = "govcookiecutter-lite"
 author = "Office for National Statistics"
 
 # List of patterns, relative to source directory, that match files and directories to

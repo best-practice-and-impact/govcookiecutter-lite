@@ -1,6 +1,6 @@
 # `docs` folder overview
 
-This folder contains documentation for `govcookiecutter`. These are written in MyST Markdown files with Sphinx compatibility.
+This folder contains documentation for `govcookiecutter-lite`. These are written in MyST Markdown files with Sphinx compatibility.
 
 ```{warning}
 Further details to consider when modifying these files are supplied in the [contributing guidance][contributing-guidance].
