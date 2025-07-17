@@ -22,7 +22,6 @@ dev = [
     "myst-parser",
     "pytest",
     "python-dotenv",
-    "Sphinx",
     "toml"
 ]
 
