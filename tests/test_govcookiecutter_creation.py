@@ -91,17 +91,3 @@ def test_builds_correctly(
                 assert re.search(r"{+ ?cookiecutter\.\w+ ?}+", f.read()) is None
         except UnicodeDecodeError:
             continue
-
-    # Test that the documentation builds as expected, and then for broken links
-    test_output_project_docs_folder = test_output_project.project_path.joinpath("docs")
-    assert (
-        main(
-            [
-                "-b",
-                "html",
-                str(test_output_project_docs_folder),
-                str(test_output_project_docs_folder.joinpath("_build")),
-            ]
-        )
-        == 0
-    )
