@@ -1,6 +1,6 @@
-# `govcookiecutter` structure
+# `govcookiecutter-lite` structure
 
-This page provides information on the `govcookiecutter` repository structure.
+This page provides information on the `govcookiecutter-lite` repository structure.
 Further detail on folder contents is available:
 
 ```{toctree}
@@ -38,7 +38,7 @@ to the repository. The baseline file flags secret-like data that the user delibe
 
 ### `CHANGELOG.md`
 
-A file describing the changes made to `govcookiecutter` over time, including unreleased
+A file describing the changes made to `govcookiecutter-lite` over time, including unreleased
 and upcoming changes.
 
 ### `CODE_OF_CONDUCT.md`
@@ -55,7 +55,7 @@ A file to store shared fixture functions for the `pytest` tests in the `tests` f
 ### `CONTRIBUTING.md`
 
 The contributing guidelines for this project, explaining how contributors can
-engage with `govcookiecutter`.
+engage with `govcookiecutter-lite`.
 
 ### `cookiecutter.json`
 
@@ -101,7 +101,7 @@ Python imports are arranged according to the [specification defined by `black`][
 
 #### `pytest`
 
-To run the tests within the `tests`, and `{{ cookiecutter.repo_name }}/tests` folders
+To run the tests within the `tests`, and `{{ cookiecutter.project_slug }}/tests` folders
 using the `pytest` Python package, enter the following command:
 
 ```shell
@@ -125,12 +125,12 @@ make coverage_html
 ```
 
 A code coverage report in HTML will be produced on the code in the `hooks` and
-`{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name.lower().replace(' ', '_').replace('-', '_') }}` folders.
+`{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}` folders.
 This HTML report can be accessed at `htmlcov/index.html`.
 
 ### `README.md`
 
-An overview of the Git repository and aims of `govcookiecutter`, including all necessary instructions to run the code.
+An overview of the Git repository and aims of `govcookiecutter-lite`, including all necessary instructions to run the code.
 
 ### `requirements.txt`
 

@@ -1,13 +1,13 @@
 # `docs` folder overview
 
-This folder contains documentation for `govcookiecutter`. These are written in MyST Markdown files with Sphinx compatibility.
+This folder contains documentation for `govcookiecutter-lite`. These are written in MyST Markdown files with Sphinx compatibility.
 
 ```{warning}
 Further details to consider when modifying these files are supplied in the [contributing guidance][contributing-guidance].
 ```
 
-To include documentation from the `{{ cookiecutter.repo_name }}`
-folder without duplicating it, refer to it in a file within the `docs/{{ cookiecutter.repo_name }}` folder.
+To include documentation from the `{{ cookiecutter.project_slug }}`
+folder without duplicating it, refer to it in a file within the `docs/{{ cookiecutter.project_slug }}` folder.
 
 To build the documentation, run:
 

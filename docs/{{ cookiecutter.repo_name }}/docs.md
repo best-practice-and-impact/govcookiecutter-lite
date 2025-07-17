@@ -1,2 +1,2 @@
-```{include} ../../{{ cookiecutter.repo_name }}/docs/repo_docs_README.md
+```{include} ../../{{ cookiecutter.project_name }}/docs/repo_docs_README.md
 ```

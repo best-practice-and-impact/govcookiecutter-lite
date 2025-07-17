@@ -1,6 +1,6 @@
-# Code of conduct for `govcookiecutter-lite`
+# Code of conduct for `{{ cookiecutter.project_slug }}`
 
-All contributors to this repository hosted by `best-practice-and-impact` are expected to follow the
+All contributors to this repository hosted by `{{ cookiecutter.organisation_handle }}` are expected to follow the
 Contributor Covenant Code of Conduct. Those working within HM Government are also expected to follow the [Civil Service
 Code][civil-service-code].
 
@@ -10,10 +10,10 @@ Code][civil-service-code].
 
 Where this Code of Conduct says:
 
-- "Project", we mean this GitHub repository, `govcookiecutter-lite` ;
-- "Maintainer", we mean active developers of `govcookiecutter-lite`; and
-- "Leadership", we mean `best-practice-and-impact` organisation owners, line managers, and other
-  leadership within the Office for National Statistics.
+- "Project", we mean this repository `{{ cookiecutter.project_slug }}` ;
+- "Maintainer", we mean active developers of the primary project team(s) behind `{{ cookiecutter.organisation_handle }}`; and
+- "Leadership", we mean `{{ cookiecutter.organisation_handle }}` organisation owners, line managers, and other
+  leadership within HMG.
 
 ### Our Pledge
 We as members, contributors, and leaders pledge to make participation
@@ -66,7 +66,7 @@ further defined and clarified by project leadership.
 ### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported by
-contacting the project team at ASAP@ons.gov.uk. All complaints will be
+contacting the project team at [][email-address]. All complaints will be
 reviewed and investigated and will result in a response that is deemed necessary and
 appropriate to the circumstances. The project team is obligated to maintain
 confidentiality with regard to the reporter of an incident. Further details of

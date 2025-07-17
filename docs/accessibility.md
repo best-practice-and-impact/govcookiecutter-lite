@@ -4,7 +4,7 @@ orphan: true
 # Accessibility statement
 
 This accessibility statement applies to content published on the
-[best-practice-and-impact.github.io/govcookiecutter][github-pages] domain.
+[best-practice-and-impact.github.io/govcookiecutter-lite][github-pages] domain.
 
 This website is run by the Office for National Statistics. We want as many people as
 possible to be able to use this website. For example, that means you should be able to:
@@ -35,7 +35,7 @@ If you need information on this website in a different format like accessible PD
 large print, easy read, audio recording or braille:
 
 - email [gsshelp@statistics.gov.uk][email]
-- raise an issue on the [`govcookiecutter` GitHub repository][github-issues]
+- raise an issue on the [`govcookiecutter-lite` GitHub repository][github-issues]
 
 ## Reporting accessibility problems with this website
 
@@ -108,8 +108,8 @@ This statement was prepared on 30 June 2021. It was last reviewed on 20 July 202
 [accessibility-legislation]: https://www.legislation.gov.uk/uksi/2018/952/regulation/4/made
 [eass]: https://www.equalityadvisoryservice.com/
 [email]: mailto:gsshelp@statistics.gov.uk
-[github-issues]: https://github.com/best-practice-and-impact/govcookiecutter/issues/new
-[github-pages]: https://best-practice-and-impact.github.io/govcookiecutter
+[github-issues]: https://github.com/best-practice-and-impact/govcookiecutter-lite/issues/new
+[github-pages]: https://best-practice-and-impact.github.io/govcookiecutter-lite
 [sphinx-autodoc]: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
 [sphinx-autosummary]: https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
 [wave]: https://wave.webaim.org/

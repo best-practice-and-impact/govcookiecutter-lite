@@ -1,12 +1,10 @@
 # Contributing guide
 
-This is the contributor guide for the `govcookiecutter` project.
+This is the contributor guide for the `govcookiecutter-lite` project.
 
-```{toctree}
-:maxdepth: 2
-../CODE_OF_CONDUCT.md
-../CONTRIBUTING.md
-./modify_govcookiecutter.md
-../{{ cookiecutter.repo_name }}/.govcookiecutter/organisational_frameworks/docs_repo_frameworks_README.md
+## Table of Contents
 
-```
+- [Code of Conduct](../CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](../CONTRIBUTING.md)
+- [How to Modify govcookiecutter-lite](./modify_govcookiecutter-lite.md)
+- [top level files](../govcookiecutter_structure/docs_structure_README.md)
