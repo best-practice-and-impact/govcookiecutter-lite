@@ -1,4 +1,4 @@
 {
-  "organisation_handle": "Your GitHub/GitLab organisation name, for example ukgovdatascience",
-  "project_name": "your_new_project_name"
+  "project_name": "your_new_project_name",
+  "organisation_handle": "ONS"
 }

@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - point readme towards govcookiecutter-lite, added section on original govcookiecutter
+- Restructured setup questions to ask project name then org handle. 
 
 ### Removed
 - Project version from setup, default is 0.0.1
@@ -23,3 +24,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - removed repo name question, instead derived from project name question
 - hosting platform setup question, PR templates not included in lite version
 - organisation name setup question, replaced with HMG in licence and code of conduct
+- framework setup question, default aqa plan is replaced with framework from GDS
+
