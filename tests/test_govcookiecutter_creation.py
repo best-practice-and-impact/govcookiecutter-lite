@@ -27,6 +27,7 @@ def test_repo_name_directory_correct(
     assert test_output_project.project_path.name == test_input_repository_name
     assert test_output_project.project_path.is_dir()
 
+
 @pytest.mark.parametrize("test_input_repository_name", ["a_", "_b"])
 def test_repo_name_errors(
     cookies,
@@ -43,6 +44,7 @@ def test_repo_name_errors(
 
     # Check that the build fails
     assert test_output_project.exit_code == -1
+
 
 # Define the test cases for the `test_builds_correctly` test
 args_builds_correctly = [
