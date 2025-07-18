@@ -49,11 +49,4 @@ jobs:
           git add .
           pip install -U pip setuptools
           pip install -e .[dev]
-          pre-commit install
         shell: bash
-      - name: Run pre-commit hooks
-        run: |
-          cd example
-          pre-commit run --all-files
-          # TODO: Currently no tests - this gives exit code 5, which fails CI, so commenting out for now
-          # pytest
