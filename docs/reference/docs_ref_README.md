@@ -25,8 +25,6 @@ hooks fail, the generated project will be rolled-back, and deleted.
 .. autosummary::
     :toctree: api/
 
-    set_aqa_framework
-
 ```
 
 ### Post-generation clean up

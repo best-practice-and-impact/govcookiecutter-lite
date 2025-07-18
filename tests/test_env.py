@@ -92,8 +92,8 @@ def define_expected_env_variables(
 
     Returns:
         A dictionary where the keys are expected directory variables, and the values
-        are the expected directory paths of the `.env` file in the `govcookiecutter-lite`
-        template directory `folder`.
+        are the expected directory paths of the `.env` file in the
+        `govcookiecutter-lite` template directory `folder`.
 
     """
 
