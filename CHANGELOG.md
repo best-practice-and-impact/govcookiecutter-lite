@@ -37,4 +37,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - framework setup question, default aqa plan is replaced with framework from GDS
 
 
-[1.0.0]: https://github.com/best-practice-and-impact/govcookiecutter-lite/tree/1.0.0
+[1.0.0]: https://github.com/best-practice-and-impact/govcookiecutter-lite/tree/v1.0.0
