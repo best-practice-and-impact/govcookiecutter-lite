@@ -14,7 +14,7 @@ jobs:
       matrix:
         # TODO: Fix R pre-commit hook issues with Windows
         os: [ ubuntu-latest] #, macos-latest ]
-        python: [ 3.9, '3.11' ] #, 3.9, '3.10' ]
+        python: [ 3.9, '3.12' ] #, 3.9, '3.10' ]
 
     steps:
       - name: Checkout the revision
@@ -42,7 +42,7 @@ jobs:
       - name: Create project from govcookiecutter for this commit
         run: cookiecutter ga-govcookiecutter --no-input project_name=example
         shell: bash
-      - name: Install requirements and pre-commit hooks
+      - name: Install requirements
         run: |
           cd example
           git init
