@@ -13,3 +13,8 @@ pytest-xdist
 python-dotenv
 Sphinx
 toml
+# ons-mkdocs-theme
+mkdocstrings[python]
+mkdocs-git-revision-date-localized-plugin
+mkdocs-jupyter
+mkdocs-mermaid2-plugin

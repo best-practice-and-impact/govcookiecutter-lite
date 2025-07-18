@@ -1,0 +1,61 @@
+site_name: Govcookiecutter Lite
+repo_url: https://github.com/best-practice-and-impact/govcookiecutter-lite
+repo_name: govcookiecutter-lite
+nav:
+  - Overview: 
+    - Getting Started: index.md
+    - Overview: readme.md
+  - Contributing:
+    - Contributing Guide: CONTRIBUTING.md
+    - Code of Conduct: CODE_OF_CONDUCT.md
+  - created folder overview:
+        - created folder structure: ./{{ cookiecutter.repo_name }}/docs_repo_README.md
+        - docs: ./{{ cookiecutter.repo_name }}/docs.md
+        - dot gcc: ./{{ cookiecutter.repo_name }}/dot_govcookiecutter.md
+        - source code: ./{{ cookiecutter.repo_name }}/source_code.md
+  - Development folder overview:
+        - development: ./govcookiecutter_structure/docs_structure_README.md
+        - docs: docs_README.md
+
+
+theme:
+  logo: "_static/af-logo.png"
+  name: material
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.path
+    - navigation.sections
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_css:
+  - _static/mkdocs_custom.css
