@@ -30,4 +30,3 @@ A file containing Python package metadata for use with `setuptools` that include
 
 A file containing information about the project, such as requirements and instructions for how to run the code. Can
 be edited to add additional information such as a summary of the project.
-
