@@ -8,13 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -
 
 ### Added
-- Repository name structure check, to ensure best practice
 
 ### Fixed
 
 ### Changed
-- point readme towards govcookiecutter-lite, added section on original govcookiecutter
-- Restructured setup questions to ask project name then org handle.
 
 ### Removed
 
