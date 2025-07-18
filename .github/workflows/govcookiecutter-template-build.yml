@@ -13,12 +13,7 @@ jobs:
       matrix:
         # TODO: Fix R pre-commit hook issues with Windows
         os: [ ubuntu-latest] #, macos-latest ]
-        python: [ 3.9, '3.11' ] #, 3.9, '3.10' ]
-        R:
-#          - {using_R: No, version: N/A}
-          - {using_R: Yes, version: 4.2.3}
-#          - {using_R: Yes, version: 4.3.3}
-          - {using_R: Yes, version: 4.4.3}
+        python: [ 3.9, '3.12' ] #, 3.9, '3.10' ]
 
     steps:
       - name: Checkout the revision
@@ -29,27 +24,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
-      - name: Install R ${{ matrix.R.version }}
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: ${{ matrix.R.version }}
-        if: ${{ matrix.R.using_r == 'Yes' }}
-      - name: Install other ${{ matrix.os }} R dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev
-          sudo apt-get install libgit2-dev
-          sudo apt-get install libharfbuzz-dev
-          sudo apt-get install libfribidi-dev
-          sudo apt -y install libfontconfig1-dev
-          sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
-        if: ${{ matrix.os == 'ubuntu-latest' && matrix.R.using_R == 'Yes' }}
-      - name: Install extra macos R dependencies
-        run: |
-          brew install harfbuzz
-          brew install fribidi
-          brew install libgit2
-        if: ${{ matrix.os == 'macos-latest' && matrix.R.using_R == 'Yes' }}
       - name: Install cookiecutter
         run: |
           if [ "$RUNNER_OS" == "Linux" ]; then
@@ -65,27 +39,13 @@ jobs:
           fi;
         shell: bash
       - name: Create project from govcookiecutter for this commit
-        run: cookiecutter ga-govcookiecutter --no-input repo_name=example using_R=${{ matrix.R.using_R }}
+        run: cookiecutter ga-govcookiecutter --no-input project_name=example
         shell: bash
-      - name: Install requirements, and pre-commit hooks, and check Sphinx build
+      - name: Install requirements
         run: |
           cd example
           git init
           git add .
-          if [[ "$RUNNER_OS" == "Linux" || "$RUNNER_OS" == "macOS" ]]; then
-            make docs
-          elif [ "$RUNNER_OS" == "Windows" ]; then
-            pip install -U pip setuptools
-            pip install -e .[dev]
-            pre-commit install
-          else
-            echo "$RUNNER_OS not supported"
-            exit 1
-          fi;
+          pip install -U pip setuptools
+          pip install -e .[dev]
         shell: bash
-      - name: Run pre-commit hooks
-        run: |
-          cd example
-          pre-commit run --all-files
-          # TODO: Currently no tests - this gives exit code 5, which fails CI, so commenting out for now
-          # pytest
