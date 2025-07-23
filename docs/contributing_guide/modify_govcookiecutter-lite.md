@@ -127,11 +127,6 @@ Notice the hyphen before the trailing `%` in each Jinja statement; this hyphen c
 blank space after the statement. A hyphen after the leading `%` in a Jinja statement
 controls blank space before the element.
 
-## Replacing folders and files
-
-[Replacing folders and files a more involved change, and is currently supported for
-AQA frameworks and pull/merge request templates only][docs-organisational-frameworks].
-These are performed in the `hooks/post_gen_project.py`file.
 
 ## Tests, coverage, and continuous integration
 

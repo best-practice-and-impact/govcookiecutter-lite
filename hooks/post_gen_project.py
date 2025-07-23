@@ -5,7 +5,8 @@ from typing import List, Union
 
 
 def delete_files_and_folders(paths: Union[Path, str, List[Path], List[str]]) -> None:
-    """Delete files and folders for given file and/or folder paths.
+    """
+    Delete files and folders for given file and/or folder paths.
 
     Args:
         paths: A ``pathlib.Path`` object or string, or list of ``pathlib.Path`` or
