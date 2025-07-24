@@ -52,7 +52,6 @@ def parse_features_json(file: Union[Path, str]) -> List[Path]:
 
 
 if __name__ == "__main__":
-
     # Define the folder path to `.govcookiecutter`
     DIR_GOVCOOKIECUTTER = Path(".govcookiecutter")
 
