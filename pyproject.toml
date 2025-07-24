@@ -64,6 +64,8 @@ post_commit_hooks = []
 
 [project.scripts]
 gcc-lite = "main:run_gcc_lite"
+gcc-example = "main:gcc_lite_example"
+
 
 # `coverage` configurations
 [tool.coverage.run]
