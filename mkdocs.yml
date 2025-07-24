@@ -35,7 +35,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
-      accent: custom
+      accent: red
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -47,6 +47,11 @@ theme:
     - navigation.path
     - navigation.sections
     - toc.integrate
+    - navigation.tabs
+    - search.suggest
+    - navigation.top
+    - navigation.expand
+    - navigation.tabs.sticky
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -61,6 +66,7 @@ markdown_extensions:
 
 plugins:
   - mkdocstrings
+  - search
 
 extra_css:
   - _static/mkdocs_custom.css
