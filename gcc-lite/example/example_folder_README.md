@@ -6,7 +6,7 @@ repository.
 In Windows, delete any pre-existing sub-folders in the `example` folder, and run:
 
 ```shell
-python -m cookiecutter . -o ./example --no-input
+python -m cookiecutter . -o ./gcc-lite/example --no-input
 ```
 
 Unix and Linux users can alternatively use a `make` command:

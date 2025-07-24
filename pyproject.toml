@@ -33,7 +33,7 @@ dev = [
     "python-dotenv",
     "Sphinx",
     "toml",
-    "bumpmyversion"
+    "bump-my-version"
 ]
 
 [tool.setuptools]
