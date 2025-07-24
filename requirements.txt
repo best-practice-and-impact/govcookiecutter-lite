@@ -13,3 +13,4 @@ pytest-xdist
 python-dotenv
 Sphinx
 toml
+ruff
