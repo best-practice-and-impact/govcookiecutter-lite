@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 ### Changed
-- moved example folder into gcc-lite package
+- moved example folder into gcc_lite package
 
 ### Removed
 
