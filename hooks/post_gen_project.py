@@ -8,14 +8,16 @@ def delete_files_and_folders(paths: Union[Path, str, List[Path], List[str]]) -> 
     """
     Delete files and folders for given file and/or folder paths.
 
-    Args:
-        paths: A ``pathlib.Path`` object or string, or list of ``pathlib.Path`` or
-        strings.
+    Parameters
+    ----------
+    paths : pathlib.Path or str or list of pathlib.Path or list of str
+        File and/or folder paths to delete.
 
-    Returns:
-        None - deletes the files and/or folders defined in ``paths`` if they exist. If
+    Returns
+    -------
+    None
+        Deletes the files and/or folders defined in `paths` if they exist. If
         this function raises an error, the files and/or folders have not been removed.
-
     """
 
     # Coerce `paths` into a list of `pathlib.Path` objects. Then remove each folder and

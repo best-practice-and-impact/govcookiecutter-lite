@@ -1,10 +1,11 @@
 site_name: Govcookiecutter Lite
 repo_url: https://github.com/best-practice-and-impact/govcookiecutter-lite
 repo_name: govcookiecutter-lite
-nav:
-  - Overview: 
-    - Getting Started: index.md
+nav: 
+  - Getting Started: index.md
+  - Overview:    
     - More info: readme.md
+    - Prompts: prompts.md
   - created folder overview:
         - created folder structure: ./{{ cookiecutter.repo_name }}/docs_repo_README.md
   - Contributing:
