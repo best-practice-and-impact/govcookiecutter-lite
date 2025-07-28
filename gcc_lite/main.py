@@ -18,7 +18,7 @@ def gcc_lite_example():
     try:
         # Run the gcc-example command
         # Alternate: Use the cookiecutter Python API directly
-        cookiecutter(template=".", output_dir="./gcc-lite/example", no_input=True)
+        cookiecutter(template=".", output_dir="./gcc_lite/example", no_input=True)
     except Exception as e:
         print(f"An error occurred while running gcc-example: {e}")
 

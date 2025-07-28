@@ -859,8 +859,8 @@ MigrationBackup/
 docs/reference/api/*
 
 # Ignore `example` folder, but not its `README.md`
-gcc-lite/example/*
-!gcc-lite/example/README.md
+gcc_lite/example/*
+!gcc_lite/example/example_folder_README.md
 
 # Ignore Sphinx documentation link checking folder
 docs/_linkcheck/
