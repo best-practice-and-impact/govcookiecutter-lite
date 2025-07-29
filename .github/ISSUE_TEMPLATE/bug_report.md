@@ -1,11 +1,38 @@
-# Bug Report
-Before raising a bug report, please take a look at the open [Issues](https://github.com/best-practice-and-impact/govcookiecutter/issues) to see if it has already been raised.
+---
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
 
-## What operating system and relevant software versions are you using?
+---
 
-## What is happening, and what should be happening instead?
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-## What's been tried to fix the problem?
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-## Anything else?
-Include any further information here, such as links that may be relevant, and a [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example) if possible.
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
+
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
+
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
