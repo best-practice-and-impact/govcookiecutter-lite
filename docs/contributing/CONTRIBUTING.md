@@ -1,9 +1,9 @@
 # Contributing
 
 We love contributions! We've compiled this documentation to help you understand our
-contributing guidelines. Please also read our [`CODE_OF_CONDUCT`](./CODE_OF_CONDUCT.md).
+contributing guidelines. Please also read our [code of conduct](./CODE_OF_CONDUCT.md).
 
-If you still have questions, please contact us at ASAP@ons.gov.uk and we'd be happy to help!
+If you still have questions, please contact us at [ASAP@ons.gov.uk][asap-email] and we'd be happy to help!
 
 
 ## Getting started
@@ -50,7 +50,7 @@ Raise an issue using the bug report template - please check the [issues][issues]
 
 ### Want to see a new feature?
 
-We'd be delighted to consider it! Please raise an issue using the feature request template after checking the [issues][issues] in case you can add to an ongoing discussion.
+We'd be delighted to consider it! Please [raise an issue][new-issue] using the feature request template after checking the [issues][issues] in case you can add to an ongoing discussion.
 
 ### Markdown
 
@@ -100,20 +100,24 @@ The HTML report can be accessed at `htmlcov/index.html`.
 
 Documentation is stored in the `docs` folder unless it's more
 appropriate to store it elsewhere, like this contributing guidance. We
-write our documentation in [MyST Markdown][myst] for use in [Sphinx][sphinx], to make
-a searchable wesite. Public sector websites must be accessible by law, and GOV.UK has
+write our documentation in [MyST Markdown][myst] for use in [mkdocs][mkdocs], to make
+a searchable website. Public sector websites must be accessible by law, and GOV.UK has
 further information on these [requirements][gov-uk-accessibility].
 
 To create the website locally, run the following command in your terminal
 at the top-level of this project:
 
 ```shell
-make docs
+mkdocs build
 ```
 
-This should create an HTML version of your documentation accessible from
-`docs/_build/index.html`.
+or make an interactive version to view live changes run:
 
+```shell
+mkdocs serve
+```
+
+[asap-email]: mailto:ASAP@ons.gov.uk
 [coverage]: https://coverage.readthedocs.io/
 [detect-secrets-repo]: https://github.com/Yelp/detect-secrets/tree/master
 [duck-book-version-control]: https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html
@@ -122,9 +126,10 @@ This should create an HTML version of your documentation accessible from
 [gitignore-io]: https://www.toptal.com/developers/gitignore
 [gov-uk-accessibility]: https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps
 [gov-uk]: https://www.gov.uk/
-[issues]: https://github.com/best-practice-and-impact/govcookiecutter/issues/new
+[issues]: https://github.com/best-practice-and-impact/govcookiecutter-lite/issues
+[new-issue]: https://github.com/best-practice-and-impact/govcookiecutter-lite/issues/new
 [myst]: https://myst-parser.readthedocs.io/
 [nbstripout-repo]: https://github.com/kynan/nbstripout
 [pre-commit]: https://pre-commit.com
 [pytest]: https://docs.pytest.org/
-[sphinx]: https://www.sphinx-doc.org/en/master/index.html
+[mkdocs]: https://www.mkdocs.org/

@@ -1,4 +1,4 @@
-# `govcookiecutter-lite`
+# govcookiecutter-lite
 
 ## What is govcookiecutter-lite?
 
@@ -105,16 +105,10 @@ Once you've answered all the prompts, your project will be created. Then:
    git init
    ```
 
-3. Install the necessary packages using `pip` and the pre-commit hooks:
+3. Install the necessary packages using `pip`:
    ```shell
    python -m pip install -U pip setuptools
    python -m pip install -e .[dev]
-   pre-commit install
-   ```
-
-   or use the `make` command:
-   ```shell
-   make install_dev
    ```
 
 4. Stage all your project files, and make your first commit
@@ -139,10 +133,6 @@ Here are some suggested changes to make before your first commit:
 - make sure the `README.md` reflects what you want to do with your project
 - have a look inside the `docs/aqa` folder, as you may want to modify some of this
   analytical quality assurance documentation (AQA), for example the AQA plan
-- (if present) confirm that the pull or merge request template checklists meet your
-  requirements
-  - These can be found at `.github/pull_request_template.md` (GitHub), or in
-    `.gitlab/merge_request_templates` folder (GitLab)
 
 ## Licence
 

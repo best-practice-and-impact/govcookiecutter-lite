@@ -31,7 +31,7 @@ Although these may be self explanatory by name, this table has been created to o
     <tbody>
         <tr>
             <td><code>project_name</code></td>
-            <td>The name to assign to your new project.<br>Underscores are advised against unless they increase readability</td>
+            <td>The name to assign to your new project.<br>Underscores are advised against unless they increase readability.<br>This name is also used as the Python package name; it can be changed in <code>pyproject.toml</code>.</td>
             <td><code>your_new_project_name</code></td>
         </tr>
         <tr>
