@@ -2,19 +2,15 @@ site_name: Govcookiecutter Lite
 repo_url: https://github.com/best-practice-and-impact/govcookiecutter-lite
 repo_name: govcookiecutter-lite
 nav: 
-  - Getting Started: index.md
-  - Overview:    
-    - More info: readme.md
-    - Prompts: prompts.md
-  - created folder overview:
-        - created folder structure: ./{{ cookiecutter.repo_name }}/docs_repo_README.md
+  - Quick Start Guide: index.md
+  - Detailed Summary: readme.md
+  - Creation Prompts: created_project_structure/prompts.md
+  - Created Folder Structure: created_project_structure/created_folder_structure.md
   - Contributing:
-    - Contributing Guide: CONTRIBUTING.md
-    - Code of Conduct: CODE_OF_CONDUCT.md
-    - Modifying Govcookiecutter-lite: ./contributing_guide/modify_govcookiecutter-lite.md
-  - Development folder overview:
-        - development: ./govcookiecutter_structure/docs_structure_README.md
-        - docs: docs_README.md
+    - Contributing Guide: contributing/CONTRIBUTING.md
+    - Code of Conduct: contributing/CODE_OF_CONDUCT.md
+    - Modifying Govcookiecutter-lite: contributing/modify_govcookiecutter-lite.md
+    - Development Folder Structure: contributing/docs_structure_README.md
 
 
 
