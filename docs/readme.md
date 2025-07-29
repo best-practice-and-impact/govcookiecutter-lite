@@ -43,7 +43,7 @@ First, make sure your system meets the requirements.
 
 ### Requirements to create a cookiecutter template
 > **Note**
-> Contributors have some additional [requirements!](./CONTRIBUTING.md)
+> Contributors have some additional [requirements!](contributing/CONTRIBUTING.md)
 
 To get started your system should meet the following requirements:
 
@@ -153,7 +153,7 @@ Crown copyright and available under the terms of the Open Government 3.0 licence
 ## Contributing
 
 If you want to help us build, and improve `govcookiecutter-lite`, view our [contributing
-guidelines](./CONTRIBUTING.md).
+guidelines](contributing/CONTRIBUTING.md).
 
 ## Acknowledgements
 
@@ -163,7 +163,7 @@ project][drivendata]. Specifically, it uses a modified version of the `help` com
 [aqua-book]: https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government
 [blog-post]: https://dataingovernment.blog.gov.uk/2021/07/20/govcookiecutter-a-template-for-data-science-projects/
 [cruft]: https://github.com/cruft/cruft
-[docs-pre-commit]: ./CONTRIBUTING.md#getting-started
+[docs-pre-commit]: contributing/CONTRIBUTING.md#getting-started
 [drivendata]: http://drivendata.github.io/cookiecutter-data-science/
 [govcookiecutter]: https://github.com/best-practice-and-impact/govcookiecutter.git
 [homebrew]: https://brew.sh/

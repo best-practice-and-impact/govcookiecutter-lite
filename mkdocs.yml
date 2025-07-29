@@ -11,6 +11,10 @@ nav:
     - Code of Conduct: contributing/CODE_OF_CONDUCT.md
     - Modifying Govcookiecutter-lite: contributing/modify_govcookiecutter-lite.md
     - Development Folder Structure: contributing/docs_structure_README.md
+    - Creating an Example Project: contributing/create_example.md
+    - Hooks: contributing/hooks_api_reference.md
+  - accessibility: accessibility.md
+
 
 
 

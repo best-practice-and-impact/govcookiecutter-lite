@@ -34,7 +34,7 @@ python -m cookiecutter https://github.com/best-practice-and-impact/govcookiecutt
 [aqua-book]: https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government
 [blog-post]: https://dataingovernment.blog.gov.uk/2021/07/20/govcookiecutter-a-template-for-data-science-projects/
 [cruft]: https://github.com/cruft/cruft
-[docs-pre-commit]: ./CONTRIBUTING.md#getting-started
+[docs-pre-commit]: contributing/CONTRIBUTING.md#getting-started
 [drivendata]: http://drivendata.github.io/cookiecutter-data-science/
 [govcookiecutter]: https://github.com/best-practice-and-impact/govcookiecutter.git
 [homebrew]: https://brew.sh/
