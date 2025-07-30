@@ -13,7 +13,7 @@ nav:
     - Development Folder Structure: contributing/docs_structure_README.md
     - Creating an Example Project: contributing/create_example.md
     - Hooks: contributing/hooks_api_reference.md
-  - accessibility: accessibility.md
+  - Accessibility: accessibility.md
 
 
 

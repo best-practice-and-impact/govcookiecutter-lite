@@ -8,12 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -
 
 ### Added
+- Use of Mkdocs and material for mkdocs to create HTML documentation
 
 ### Fixed
 
 ### Changed
+- Structure of Docs folder, combined and removed files to simplify folder structure
+- Reviewed accessibility statement
 
 ### Removed
+- Sphinx documentation
 
 ## [1.0.0] - 18th July 2025
 
