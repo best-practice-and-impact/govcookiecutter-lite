@@ -36,11 +36,11 @@
   /* --md-default-bg-color: #3D3D3D; */
 }
 
-.md-typeset h1, 
-.md-typeset h2, 
-.md-typeset h3, 
-.md-typeset h4, 
-.md-typeset h5, 
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
 .md-typeset h6 {
     color: var(--title-font-color);
 }

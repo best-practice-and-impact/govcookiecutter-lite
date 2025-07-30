@@ -1,7 +1,7 @@
 site_name: Govcookiecutter Lite
 repo_url: https://github.com/best-practice-and-impact/govcookiecutter-lite
 repo_name: govcookiecutter-lite
-nav: 
+nav:
   - Quick Start Guide: index.md
   - Detailed Summary: readme.md
   - Creation Prompts: created_project_structure/prompts.md

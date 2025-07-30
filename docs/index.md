@@ -31,7 +31,7 @@ More information on these top level files can be found in [created folder struct
 Govcookiecutter-lite only has one package requirement; `cookiecutter`. The following two lines can be pasted and run in a python virtual environment and will install cookiecutter, then use the govcookiecutter-lite template to create your new project.
 
 
-``` shell 
+``` shell
 pip install cookiecutter
 python -m cookiecutter https://github.com/best-practice-and-impact/govcookiecutter-lite.git
 ```

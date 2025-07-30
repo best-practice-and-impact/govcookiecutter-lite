@@ -12,7 +12,7 @@ python -m cookiecutter . -o ./example --no-input
 Unix and Linux users can alternatively use a `make` command:
 
 !!! warning
-        
+
     Any existing folders will be automatically deleted by executing the make command.
 
 

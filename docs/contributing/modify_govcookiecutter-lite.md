@@ -1,7 +1,7 @@
 # Modifying govcookiecutter-lite
 
 !!! warning
-  
+
     It's strongly recommended you build an example project to test that your changes work!
 
 
