@@ -66,6 +66,7 @@ theme:
     - navigation.top
     - navigation.expand
     - navigation.tabs.sticky
+    - navigation.footer
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -87,3 +88,5 @@ plugins:
 
 extra_css:
   - _static/mkdocs_custom.css
+
+copyright: Copyright &copy; Office for National Statistics 2025
