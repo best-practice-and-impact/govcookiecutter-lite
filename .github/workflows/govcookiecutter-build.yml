@@ -32,10 +32,10 @@ jobs:
       - name: Create documentation
         run: |
           if [[ "$RUNNER_OS" == "Linux" || "$RUNNER_OS" == "macOS" ]]; then
-            sphinx-build -b html ./docs ./docs/_build
+            mkdocs build -c -s
           elif [ "$RUNNER_OS" == "Windows" ]; then
             # TODO: Investigate why Sphinx build raises a warning on Windows but not Unix
-            sphinx-build -b html ./docs ./docs/_build -Q
+            mkdocs build -c -s
           else
             echo "$RUNNER_OS not supported"
             exit 1
