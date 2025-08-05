@@ -8,11 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -
 
 ### Added
+- created govcookiecutter-lite package which has two entry points "gcc-lite" to create repo, "gcc-example" to build in development example folder
+- added bump-my-version to handle versioning
 
 ### Fixed
 
 ### Changed
 - replaced flake8 and black with ruff formatter and linter
+- moved example folder into gcc_lite package
 
 ### Removed
 
