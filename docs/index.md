@@ -40,7 +40,7 @@ Further details on the prompts asked and what they mean can be found in [creatio
 ## Picking between Govcookiecutter and Govcookiecutter-lite
 
 We have tabulated the differences between the versions to help selecting which version best suites your use case.
-Note it is possible to add items such as pre-commit hooks and buildable documentation post creation, this table simply denotes what is included at project creation. 
+Note it is possible to add items such as pre-commit hooks and buildable documentation post creation, this table simply denotes what is included at project creation.
 
 | Feature                          | [Govcookiecutter][govcookiecutter] | [Govcookiecutter-lite][govcookiecutter-lite] |
 |-----------------------------------|:-----------------:|:---------------------:|
@@ -53,7 +53,7 @@ Note it is possible to add items such as pre-commit hooks and buildable document
 | Pre-commit hooks                       | ✓           | ✗                     |
 | Options to include R                    | ✓           | ✗                     |
 | Options to specify if development is in locked down environment | ✓ | N/A *|
-|Platform specific issue and pull request templates| ✓ |  ✗| 
+|Platform specific issue and pull request templates| ✓ |  ✗|
 
 \* This option is not included in govcookiecutter-lite as it relates to pre-commit hooks
 
