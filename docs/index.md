@@ -37,6 +37,28 @@ python -m cookiecutter https://github.com/best-practice-and-impact/govcookiecutt
 ```
 Further details on the prompts asked and what they mean can be found in [creation prompts][prompts].
 
+## Picking between Govcookiecutter and Govcookiecutter-lite
+
+We have tabulated the differences between the versions to help selecting which version best suites your use case.
+Note it is possible to add items such as pre-commit hooks and buildable documentation post creation, this table simply denotes what is included at project creation. 
+
+| Feature                          | [Govcookiecutter][govcookiecutter] | [Govcookiecutter-lite][govcookiecutter-lite] |
+|-----------------------------------|:-----------------:|:---------------------:|
+| Python Project Template           | ✓                 | ✓                     |
+| Documentation Folder with Analytical QA | ✓           | ✓                     |
+| Unit test folder                        | ✓           | ✓                     |
+| Simplified setup prompts                | ✗           | ✓                     |
+| Example code and unit tests             | ✓           | ✗                     |
+| HTML Buildable Documentation            | ✓           | ✗                     |
+| Pre-commit hooks                       | ✓           | ✗                     |
+| Options to include R                    | ✓           | ✗                     |
+| Options to specify if development is in locked down environment | ✓ | N/A *|
+|Platform specific issue and pull request templates| ✓ |  ✗| 
+
+\* This option is not included in govcookiecutter-lite as it relates to pre-commit hooks
+
+
+
 [prompts]: created_project_structure/prompts.md
 [created-folder-structure]: created_project_structure/created_folder_structure.md
 [aqua-book]: https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government
@@ -49,3 +71,5 @@ Further details on the prompts asked and what they mean can be found in [creatio
 [issue-windows-os]: https://github.com/best-practice-and-impact/govcookiecutter/issues/20
 [pluralsight]: https://www.pluralsight.com/tech-blog/managing-python-environments/
 [youtube]: https://www.youtube.com/watch?v=N7_d3k3uQ_M
+[govcookiecutter]: https://github.com/best-practice-and-impact/govcookiecutter/tree/main
+[govcookiecutter-lite]: https://github.com/best-practice-and-impact/govcookiecutter-lite/tree/main
