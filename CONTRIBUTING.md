@@ -12,7 +12,7 @@ To start contributing, open your terminal and install the package and
 [pre-commit hooks][pre-commit] using:
 
 ```shell
-pip install -r requirements.txt
+pip install -e .[dev]
 pre-commit install
 ```
 
