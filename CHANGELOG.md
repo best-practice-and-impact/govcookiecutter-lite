@@ -8,11 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -
 
 ### Added
+- created govcookiecutter-lite package which has two entry points "gcc-lite" to create repo, "gcc-example" to build in development example folder
+- added bump-my-version to handle versioning
 - Use of Mkdocs and material for mkdocs to create HTML documentation
 
 ### Fixed
 
 ### Changed
+- moved example folder into gcc_lite package
 - Structure of Docs folder, combined and removed files to simplify folder structure
 - Reviewed accessibility statement
 
@@ -41,4 +44,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - framework setup question, default aqa plan is replaced with framework from GDS
 
 
-[1.0.0]: https://github.com/best-practice-and-impact/govcookiecutter-lite/tree/1.0.0
+[1.0.0]: https://github.com/best-practice-and-impact/govcookiecutter-lite/tree/v1.0.0

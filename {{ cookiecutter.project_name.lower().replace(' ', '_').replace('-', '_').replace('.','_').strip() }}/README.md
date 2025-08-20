@@ -21,7 +21,7 @@ a virtual environment.
 ## Requirements
 
 - Python 3.9+ installed
-- a `.secrets` file with the required [secrets and credentials](#required-secrets-and-credentials)
+- a `.secrets` file with the required secrets and credentials
 - to have [loaded environment variables][docs-loading-environment-variables] from `.env`
 
 Contributors have some additional requirements - please see our [contributing guidance][contributing].
