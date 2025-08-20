@@ -124,7 +124,7 @@ A list of Python package dependencies for the `govcookiecutter` repository,
 which can be installed using the `pip install` command:
 
 ```shell
-pip install --requirement requirements.txt
+pip install -e .[dev]
 ```
 
 Alternatively, Unix and Linux users can install the requirements along with pre-commit hooks by running the following command:

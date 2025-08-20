@@ -118,8 +118,7 @@ def define_expected_env_variables(
             and d.parent.name not in exclude_sub_folders_in_parent_folders
         ):
             if (
-                d.name.upper()
-                == "{{ cookiecutter.project_slug }}".upper()  # noqa: E501
+                d.name.upper() == "{{ cookiecutter.project_slug }}".upper()  # noqa: E501
             ):
                 env_expected_dir_variable = loop_directories_children(
                     d, env_expected_dir_variable

@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 ### Changed
+- replaced flake8 and black with ruff formatter and linter
 - moved example folder into gcc_lite package
 - Structure of Docs folder, combined and removed files to simplify folder structure
 - Reviewed accessibility statement
