@@ -36,7 +36,7 @@ dev = [
     "python-dotenv",
     "toml",
     "bump-my-version",
-    "ruff"
+    "ruff",
     "mkdocstrings[python]",
     "mkdocs-git-revision-date-localized-plugin",
     "mkdocs-jupyter",
