@@ -77,8 +77,7 @@ The content listed below is non-accessible for the following reasons.
 #### Disproportionate burden
 
 [The use of layout tables are due to the use of the
-`sphinx.ext.autosummary`][sphinx-autosummary], and [`sphinx.ext.autodoc`
-extensions][sphinx-autodoc]. This is a third-party, open source code base, and so is
+`mkdocstrings`][mkdocstrings]. This is a third-party, open source code base, and so is
 beyond the scope of this project to fix, although we will apply updates as this
 codebase develops.
 
@@ -98,11 +97,11 @@ They tested all pages on this site.
 
 ## What we're doing to improve accessibility
 
-We plan to fix the accessibility issues in the content by the end of December 2021.
+We plan to fix the accessibility issues in the content by the end of December 2025.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 30 June 2021. It was last reviewed on 20 July 2021.
+This statement was prepared on 30 June 2021. It was last reviewed on 30 July 2025.
 
 [abilitynet]: https://abilitynet.org.uk/
 [accessibility-legislation]: https://www.legislation.gov.uk/uksi/2018/952/regulation/4/made
@@ -110,8 +109,7 @@ This statement was prepared on 30 June 2021. It was last reviewed on 20 July 202
 [email]: mailto:gsshelp@statistics.gov.uk
 [github-issues]: https://github.com/best-practice-and-impact/govcookiecutter-lite/issues/new
 [github-pages]: https://best-practice-and-impact.github.io/govcookiecutter-lite
-[sphinx-autodoc]: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
-[sphinx-autosummary]: https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
+[mkdocstrings]: https://mkdocstrings.github.io/
 [wave]: https://wave.webaim.org/
 [wcag]: https://www.w3.org/TR/WCAG21/
 [wcag-2.1-1.3.1]: https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html

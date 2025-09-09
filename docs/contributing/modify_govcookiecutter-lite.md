@@ -1,10 +1,11 @@
-# Modifying `govcookiecutter-lite`
+# Modifying govcookiecutter-lite
 
-```{warning}
-It's strongly recommended you build an example project to test that your changes work!
-```
+!!! warning
 
-[`govcookiecutter-lite` uses the `cookiecutter` Python package][cookiecutter] to build
+    It's strongly recommended you build an example project to test that your changes work!
+
+
+Govcookiecutter-lite uses the [`cookiecutter` Python package][cookiecutter] to build
 template project structures. In turn, [`cookiecutter` uses Jinja templating to inject
 user-defined variables][jinja] into files, file names, and folder names. Most of these
 variables are based on answers to prompts when you run the `cookiecutter` command.
@@ -52,86 +53,8 @@ User entries are validated with pre-generation hooks, which are defined in
 `hooks/pre_gen_project.py`. These hooks run before a project is created and, if they
 fail, will not create the project.
 
-The only supported validation currently is for a [valid email address, based on the
-HTML5 standard for email address format][html5-email-format].
-
-## Conditional files and/or folders
-
-Conditional folders and/or files are items than only exist if actively selected for the
-user. For example, if users select `No` for the `using_R` prompt, any R files and
-content is removed from their outputted project.
-
-```{note} Folder and file names with Jinja templating
-
-Do not use Jinja templating for conditional folders and/or files, as certain characters
-may not be supported on all operating systems.
-
-```
-
-This functionality is provided by post-generation hooks in `govcookiecutter-lite`, which are
-defined in `hooks/post_gen_project.py`. These hooks only run after a project has been
-generated and, if they fail, will rollback the entire project.
-
-Conditional files and folders are defined as `features` in the
-`{{ cookiecutter.project_slug }}/manifest.json` file, which looks like:
-
-```
-{
-  "features": [
-    {
-      "name": "A name",
-      "description": "A description.",
-      "remove": {% if cookiecutter.{KEY} == {VALUE} %}true{% else %}false{% endif %},
-      "resources": ["A", "list", "of", "files", "and/or", "folders"]
-    }
-  ]
-}
-```
-
-where `{KEY}` and `{VALUE}` are `cookiecutter.json` keys and values.
-
-This works by using Jinja conditional templating to either set the `remove` value to
-true or false. The post-generation hook then scans through this JSON file deleting all
-files and folders listed in the `resources` value where `remove == true`.
-
-### Changing conditional folders and files
-
-If an existing feature has a `remove` condition that meets your needs, amend its
-`resources` list to change the folders/files that will be removed.
-
-To add a new feature, add a dictionary within the `features` list, which has at least
-the `remove` and `resources` keys. Add your Jinja conditional for the `remove` value,
-and a list of files/folders for the `resources` key. For documentation purposes, it's
-good practice to add `name` and `description` keys as well!
-
-To remove a feature, delete the appropriate dictionary from the `features` list.
-
-## Conditional file content
-
-Jinja conditional statements can be used display content based on the user responses.
-For example, for the following Markdown:
-
-```markdown
-### `CONTRIBUTING.md`
-
-The contributing guidelines for this project.
-
-### `LICENSE`
-
-The licence for this project...
-```
-
-the `DESCRIPTION` section is conditional on the user response to the `using_R` prompt.
-
-Notice the hyphen before the trailing `%` in each Jinja statement; this hyphen controls
-blank space after the statement. A hyphen after the leading `%` in a Jinja statement
-controls blank space before the element.
-
-## Replacing folders and files
-
-[Replacing folders and files a more involved change, and is currently supported for
-AQA frameworks and pull/merge request templates only][docs-organisational-frameworks].
-These are performed in the `hooks/post_gen_project.py`file.
+Currently we only raise a warning if the user includes underscores in the project name.
+It is recommend to only include underscores in package names if they improve readability.
 
 ## Tests, coverage, and continuous integration
 
@@ -180,15 +103,9 @@ When a pull request is raised, GitHub Actions will also:
 - navigate into the example project
 - initialise Git
 - install requirements
-- build the example project documentation, checking for errors but not warnings
-- check for broken external links in the documentation
-- run pre-commit hooks on all files
 
 These "on pull request" CI checks are run on Ubuntu, and macOS operating systems, as
-well as Python 3.6+, and for example projects with or without R 4.0.4+.
-
-[To understand why only certain operating systems are supported for GitHub Actions,
-see GitHub issues 29 and 30][github-issues].
+well as Python 3.9+.
 
 ## Releases
 

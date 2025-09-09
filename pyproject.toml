@@ -1,3 +1,78 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "govcookiecutter-lite"
+description = "A lightweight python template for HMG"
+version = "1.0.0"
+authors = [
+    {"name" = "ASAP"}
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "cookiecutter"
+]
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "cookiecutter",
+    "coverage",
+    "detect-secrets",
+    "pytest-cookies",
+    "jinja2-time",
+    "myst-parser",
+    "pre-commit",
+    "pytest",
+    "pytest-mock",
+    "pytest-xdist",
+    "python-dotenv",
+    "toml",
+    "bump-my-version",
+    "ruff",
+    "mkdocstrings[python]",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-jupyter",
+    "mkdocs-mermaid2-plugin"
+]
+
+[tool.setuptools.packages.find]
+include = ["gcc_lite*"]
+
+[tool.bumpversion]
+current_version = "1.0.0"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+search = "{current_version}"
+replace = "{new_version}"
+regex = false
+ignore_missing_version = false
+ignore_missing_files = false
+tag = true
+sign_tags = false
+tag_name = "v{new_version}"
+tag_message = "Bump version: {current_version} → {new_version}"
+allow_dirty = false
+commit = true
+message = "Bump version: {current_version} → {new_version}"
+moveable_tags = []
+commit_args = "--no-verify"
+setup_hooks = []
+pre_commit_hooks = []
+post_commit_hooks = []
+
+[project.scripts]
+gcc-lite = "gcc_lite.main:run_gcc_lite"
+gcc-example = "gcc_lite.main:gcc_lite_example"
+
+
 # `coverage` configurations
 [tool.coverage.run]
 source = [
@@ -8,16 +83,10 @@ omit = [
     "./{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}/run_pipeline.py"
 ]
 
-[tool.coverage.omit]
-
 [tool.coverage.report]
 exclude_lines = [
     "if __name__ == .__main__.:"
 ]
-
-# `isort` configurations
-[tool.isort]
-profile = "black"
 
 # `pytest` configurations
 [tool.pytest.ini_options]
@@ -37,3 +106,28 @@ testpaths = [
 [tool.bandit]
 exclude_dirs = ["tests", "docs"]
 skips = []
+
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    ]
+ignore = ["D203", "E203"]
+
+[tool.ruff]
+line-length = 88
+exclude = [
+    "[{][{] cookiecutter.repo_name [}][}]/"
+]
+
+[tool.ruff.format]
+line-ending = "auto"

@@ -8,12 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] -
 
 ### Added
+- created govcookiecutter-lite package which has two entry points "gcc-lite" to create repo, "gcc-example" to build in development example folder
+- added bump-my-version to handle versioning
+- Use of Mkdocs and material for mkdocs to create HTML documentation
 
 ### Fixed
 
 ### Changed
+- replaced flake8 and black with ruff formatter and linter
+- moved example folder into gcc_lite package
+- Structure of Docs folder, combined and removed files to simplify folder structure
+- Reviewed accessibility statement
 
 ### Removed
+- Sphinx documentation
 
 ## [1.0.0] - 18th July 2025
 

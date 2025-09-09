@@ -1,4 +1,4 @@
-# `govcookiecutter-lite`
+# govcookiecutter-lite
 
 ## What is govcookiecutter-lite?
 
@@ -43,7 +43,7 @@ First, make sure your system meets the requirements.
 
 ### Requirements to create a cookiecutter template
 > **Note**
-> Contributors have some additional [requirements!](./CONTRIBUTING.md)
+> Contributors have some additional [requirements!](contributing/CONTRIBUTING.md)
 
 To get started your system should meet the following requirements:
 
@@ -105,16 +105,10 @@ Once you've answered all the prompts, your project will be created. Then:
    git init
    ```
 
-3. Install the necessary packages using `pip` and the pre-commit hooks:
+3. Install the necessary packages using `pip`:
    ```shell
    python -m pip install -U pip setuptools
    python -m pip install -e .[dev]
-   pre-commit install
-   ```
-
-   or use the `make` command:
-   ```shell
-   make install_dev
    ```
 
 4. Stage all your project files, and make your first commit
@@ -139,10 +133,6 @@ Here are some suggested changes to make before your first commit:
 - make sure the `README.md` reflects what you want to do with your project
 - have a look inside the `docs/aqa` folder, as you may want to modify some of this
   analytical quality assurance documentation (AQA), for example the AQA plan
-- (if present) confirm that the pull or merge request template checklists meet your
-  requirements
-  - These can be found at `.github/pull_request_template.md` (GitHub), or in
-    `.gitlab/merge_request_templates` folder (GitLab)
 
 ## Licence
 
@@ -153,7 +143,7 @@ Crown copyright and available under the terms of the Open Government 3.0 licence
 ## Contributing
 
 If you want to help us build, and improve `govcookiecutter-lite`, view our [contributing
-guidelines](./CONTRIBUTING.md).
+guidelines](contributing/CONTRIBUTING.md).
 
 ## Acknowledgements
 
@@ -163,7 +153,7 @@ project][drivendata]. Specifically, it uses a modified version of the `help` com
 [aqua-book]: https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government
 [blog-post]: https://dataingovernment.blog.gov.uk/2021/07/20/govcookiecutter-a-template-for-data-science-projects/
 [cruft]: https://github.com/cruft/cruft
-[docs-pre-commit]: ./CONTRIBUTING.md#getting-started
+[docs-pre-commit]: contributing/CONTRIBUTING.md#getting-started
 [drivendata]: http://drivendata.github.io/cookiecutter-data-science/
 [govcookiecutter]: https://github.com/best-practice-and-impact/govcookiecutter.git
 [homebrew]: https://brew.sh/

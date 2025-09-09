@@ -115,7 +115,7 @@ args_injected_counts_correct = [
 
 
 @pytest.mark.parametrize(
-    "test_input_variable, test_input_value, " "test_input_variable_counts",
+    "test_input_variable, test_input_value, test_input_variable_counts",
     args_injected_counts_correct,
 )
 def test_injected_counts_correct(
@@ -124,7 +124,6 @@ def test_injected_counts_correct(
     test_input_value: str,
     test_input_variable_counts: Dict[str, int],
 ) -> None:
-
     # Generate the expected counts
     test_expected_counts = replace_cookiecutter_jinja2_counts(
         test_input_variable_counts,
