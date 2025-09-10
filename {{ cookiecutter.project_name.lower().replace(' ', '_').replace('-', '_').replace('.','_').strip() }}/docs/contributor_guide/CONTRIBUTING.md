@@ -23,9 +23,7 @@ documentation such as [detect-secrets][detect-secrets-repo] or [nbstripout][nbst
 
 ## Code conventions
 
-We mainly follow the [GDS Way][gds-way] in our code conventions. For Python code, we
-follow the [GDS Way Python style guide][gds-way-python], and use the flake8
-pre-commit hook for linting.
+We mainly follow [PEP8 standards][pep8] in our code conventions.
 
 ### Git and GitHub
 
@@ -86,8 +84,7 @@ write our documentation in [MyST Markdown][myst].
 [coverage]: https://coverage.readthedocs.io/
 [detect-secrets-repo]: https://github.com/Yelp/detect-secrets/tree/master
 [duck-book-version-control]: https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html
-[gds-way-python]: https://gds-way.cloudapps.digital/manuals/programming-languages/python/python.html#python-style-guide
-[gds-way]: https://gds-way.digital.cabinet-office.gov.uk/
+[pep8]: https://peps.python.org/pep-0008/
 [gitignore-io]: https://www.toptal.com/developers/gitignore
 [gov-uk]: https://www.gov.uk/
 [myst]: https://myst-parser.readthedocs.io/
