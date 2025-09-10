@@ -72,7 +72,6 @@ make help
 
 A file containing Python project settings. This includes configuration settings for:
 
-- [`isort`](#isort)
 - [`pytest`](#pytest)
 - [code coverage](#code-coverage)
 
