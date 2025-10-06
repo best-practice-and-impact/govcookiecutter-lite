@@ -27,3 +27,9 @@ dev = [
 
 [tool.setuptools]
 zip-safe = false
+
+# `coverage` configurations
+[tool.coverage.run]
+source = [
+    "./{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}"
+]
