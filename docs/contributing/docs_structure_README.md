@@ -3,11 +3,6 @@
 Each subsection here contains a brief description about the files at the top-level of
 this Git repository.
 
-## `.flake8`
-
-A configuration file for the `flake8` Python package that provides linting. This file
-is based on the common configuration described in the [GDS Way][gds-way-flake8].
-
 ## `.gitignore`
 
 A `.gitignore` file to specify that git should not track certain files and folders in this repository.
@@ -77,13 +72,9 @@ make help
 
 A file containing Python project settings. This includes configuration settings for:
 
-- [`isort`](#isort)
 - [`pytest`](#pytest)
 - [code coverage](#code-coverage)
 
-### `isort`
-
-Python imports are arranged according to the [specification defined by `black`][black].
 
 ### `pytest`
 
@@ -118,24 +109,8 @@ This HTML report can be accessed at `htmlcov/index.html`.
 
 An overview of the Git repository and aims of `govcookiecutter-lite`, including all necessary instructions to run the code.
 
-## `requirements.txt`
 
-A list of Python package dependencies for the `govcookiecutter` repository,
-which can be installed using the `pip install` command:
-
-```shell
-pip install -e .[dev]
-```
-
-Alternatively, Unix and Linux users can install the requirements along with pre-commit hooks by running the following command:
-
-```shell
-make requirements
-```
-
-[black]: https://black.readthedocs.io/en/stable/
 [code-of-conduct]: https://github.com/best-practice-and-impact/govcookiecutter/blob/main/docs/CODE_OF_CONDUCT.md
 [cookiecutter]: https://cookiecutter.readthedocs.io/
 [detect-secrets]: https://github.com/Yelp/detect-secrets
 [docs-pre-commit-hooks]: https://github.com/best-practice-and-impact/govcookiecutter/blob/main/%7B%7B%20cookiecutter.repo_name%20%7D%7D/docs/contributor_guide/CONTRIBUTING.md#getting-started
-[gds-way-flake8]: https://gds-way.cloudapps.digital/manuals/programming-languages/python/python.html#common-configuration

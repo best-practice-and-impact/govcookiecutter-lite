@@ -23,7 +23,6 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "bandit",
-    "cookiecutter",
     "coverage",
     "detect-secrets",
     "pytest-cookies",
@@ -36,7 +35,11 @@ dev = [
     "python-dotenv",
     "toml",
     "bump-my-version",
-    "ruff",
+    "ruff"
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
     "mkdocstrings[python]",
     "mkdocs-git-revision-date-localized-plugin",
     "mkdocs-jupyter",
